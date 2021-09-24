@@ -28,453 +28,9 @@
 
 <body>
     <div class="main-wrapper">
-        <header>
-            <!-- Header top area start -->
-            <div class="header-top">
-                <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col">
-                            <div class="welcome-text">
-                                <p>World Wide Completely Free Returns and Shipping</p>
-                            </div>
-                        </div>
-                        <div class="col d-none d-lg-block">
-                            <div class="top-nav">
-                                <ul>
-                                    <li><a href="tel:0123456789"><i class="fa fa-phone"></i> +012 3456 789</a></li>
-                                    <li><a href="mailto:demo@example.com"><i class="fa fa-envelope-o"></i> demo@example.com</a></li>
-                                    <li><a href="my-account.html"><i class="fa fa-user"></i> Account</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Header top area end -->
-            <!-- Header action area start -->
-            <div class="header-bottom  d-none d-lg-block">
-                <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-lg-3 col">
-                            <div class="header-logo">
-                                <a href="index.html"><img src="assets/images/logo/logo.png" alt="Site Logo" /></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-none d-lg-block">
-                            <div class="search-element">
-                                <form action="#">
-                                    <input type="text" placeholder="Search" />
-                                    <button><i class="pe-7s-search"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col">
-                            <div class="header-actions">
-                                <!-- Single Wedge Start -->
-                                <a href="#offcanvas-wishlist" class="header-action-btn offcanvas-toggle">
-                                    <i class="pe-7s-like"></i>
-                                </a>
-                                <!-- Single Wedge End -->
-                                <a href="#offcanvas-cart" class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
-                                    <i class="pe-7s-shopbag"></i>
-                                    <span class="header-action-num">01</span>
-                                    <!-- <span class="cart-amount">€30.00</span> -->
-                                </a>
-                                <a href="#offcanvas-mobile-menu" class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
-                                    <i class="pe-7s-menu"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Header action area end -->
-            <!-- Header action area start -->
-            <div class="header-bottom d-lg-none sticky-nav style-1">
-                <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-lg-3 col">
-                            <div class="header-logo">
-                                <a href="index.html"><img src="assets/images/logo/logo.png" alt="Site Logo" /></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-none d-lg-block">
-                            <div class="search-element">
-                                <form action="#">
-                                    <input type="text" placeholder="Search" />
-                                    <button><i class="pe-7s-search"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col">
-                            <div class="header-actions">
-                                <!-- Single Wedge Start -->
-                                <a href="#offcanvas-wishlist" class="header-action-btn offcanvas-toggle">
-                                    <i class="pe-7s-like"></i>
-                                </a>
-                                <!-- Single Wedge End -->
-                                <a href="#offcanvas-cart" class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
-                                    <i class="pe-7s-shopbag"></i>
-                                    <span class="header-action-num">01</span>
-                                    <!-- <span class="cart-amount">€30.00</span> -->
-                                </a>
-                                <a href="#offcanvas-mobile-menu" class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
-                                    <i class="pe-7s-menu"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Header action area end -->
-            <!-- header navigation area start -->
-            <div class="header-nav-area d-none d-lg-block sticky-nav">
-                <div class="container">
-                    <div class="header-nav">
-                        <div class="main-menu position-relative">
-                            <ul>
-                                <li class="dropdown"><a href="#">Home <i class="fa fa-angle-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="index.html">Home 1</a></li>
-                                        <li><a href="index-2.html">Home 2</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="about.html">About</a></li>
-                                <li class="dropdown position-static"><a href="about.html">Pages <i class="fa fa-angle-down"></i></a>
-                                    <ul class="mega-menu d-block">
-                                        <li class="d-flex">
-                                            <ul class="d-block">
-                                                <li class="title"><a href="#">Inner Pages</a></li>
-                                                <li><a href="404.html">404 Page</a></li>
-                                                <li><a href="order-tracking.html">Order Tracking</a></li>
-                                                <li><a href="faq.html">Faq Page</a></li>
-                                                <li><a href="coming-soon.html">Coming Soon Page</a></li>
-                                            </ul>
-                                            <ul class="d-block">
-                                                <li class="title"><a href="#">Other Shop Pages</a></li>
-                                                <li><a href="cart.html">Cart Page</a></li>
-                                                <li><a href="checkout.html">Checkout Page</a></li>
-                                                <li><a href="compare.html">Compare Page</a></li>
-                                                <li><a href="wishlist.html">Wishlist Page</a></li>
-                                            </ul>
-                                            <ul class="d-block">
-                                                <li class="title"><a href="#">Related Shop Pages</a></li>
-                                                <li><a href="my-account.html">Account Page</a></li>
-                                                <li><a href="login.html">Login & Register Page</a></li>
-                                                <li><a href="empty-cart.html">Empty Cart Page</a></li>
-                                                <li><a href="thank-you-page.html">Thank You Page</a></li>
-                                            </ul>
-                                            <ul class="d-flex align-items-center p-0 border-0 flex-column justify-content-center">
-                                                <li>
-                                                    <a class="p-0" href="shop-left-sidebar.html"><img class="img-responsive w-100" src="assets/images/banner/menu-banner.png" alt=""></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown position-static"><a href="#">Shop <i
-                                    class="fa fa-angle-down"></i></a>
-                                    <ul class="mega-menu d-block">
-                                        <li class="d-flex">
-                                            <ul class="d-block">
-                                                <li class="title"><a href="#">Shop Page</a></li>
-                                                <li><a href="shop-3-column.html">Shop 3 Column</a></li>
-                                                <li><a href="shop-4-column.html">Shop 4 Column</a></li>
-                                                <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
-                                                <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                                <li><a href="shop-list-left-sidebar.html">Shop List Left Sidebar</a>
-                                                </li>
-                                                <li><a href="shop-list-right-sidebar.html">Shop List Right Sidebar</a>
-                                                </li>
-                                            </ul>
-                                            <ul class="d-block">
-                                                <li class="title"><a href="#">product Details Page</a></li>
-                                                <li><a href="single-product.html">Product Single</a></li>
-                                                <li><a href="single-product-variable.html">Product Variable</a></li>
-                                                <li><a href="single-product-affiliate.html">Product Affiliate</a></li>
-                                                <li><a href="single-product-group.html">Product Group</a></li>
-                                                <li><a href="single-product-tabstyle-2.html">Product Tab 2</a></li>
-                                                <li><a href="single-product-tabstyle-3.html">Product Tab 3</a></li>
-                                            </ul>
-                                            <ul class="d-block">
-                                                <li class="title"><a href="#">Single Product Page</a></li>
-                                                <li><a href="single-product-slider.html">Product Slider</a></li>
-                                                <li><a href="single-product-gallery-left.html">Product Gallery Left</a>
-                                                <li><a href="single-product-gallery-right.html">Product Gallery Right</a> </li>
-                                                <li><a href="single-product-sticky-left.html">Product Sticky Left</a>
-                                                </li>
-                                                <li><a href="single-product-sticky-right.html">Product Sticky Right</a>
-                                                </li>
-                                                <li><a href="cart.html">Cart Page</a></li>
-                                            </ul>
-                                            <ul class="d-block p-0 border-0">
-                                                <li class="title"><a href="#">Single Product Page</a></li>
-                                                <li><a href="checkout.html">Checkout Page</a></li>
-                                                <li><a href="compare.html">Compare Page</a></li>
-                                                <li><a href="wishlist.html">Wishlist Page</a></li>
-                                                <li><a href="my-account.html">Account Page</a></li>
-                                                <li><a href="login.html">Login & Register Page</a></li>
-                                                <li><a href="empty-cart.html">Empty Cart Page</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown "><a href="#">Blog <i class="fa fa-angle-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li class="dropdown position-static"><a href="blog-grid-left-sidebar.html">Blog Grid
-                                                <i class="fa fa-angle-right"></i></a>
-                                            <ul class="sub-menu sub-menu-2">
-                                                <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                <li><a href="blog-grid-left-sidebar.html">Blog Grid Left Sidebar</a></li>
-                                                <li><a href="blog-grid-right-sidebar.html">Blog Grid Right Sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown position-static"><a href="blog-list-left-sidebar.html">Blog List
-                                                <i class="fa fa-angle-right"></i></a>
-                                            <ul class="sub-menu sub-menu-2">
-                                                <li><a href="blog-list.html">Blog List</a></li>
-                                                <li><a href="blog-list-left-sidebar.html">Blog List Left Sidebar</a></li>
-                                                <li><a href="blog-list-right-sidebar.html">Blog List Right Sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown position-static"><a href="blog-single-left-sidebar.html">Single
-                                                Blog <i class="fa fa-angle-right"></i></a>
-                                            <ul class="sub-menu sub-menu-2">
-                                                <li><a href="blog-single.html">Single Blog</a>
-                                                <li><a href="blog-single-left-sidebar.html">Single Blog Left Sidebar</a>
-                                                </li>
-                                                <li><a href="blog-single-right-sidebar.html">Single Blog Right Sidebar</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- header navigation area end -->
-            <div class="mobile-search-box d-lg-none">
-                <div class="container">
-                    <!-- mobile search start -->
-                    <div class="search-element max-width-100">
-                        <form action="#">
-                            <input type="text" placeholder="Search" />
-                            <button><i class="pe-7s-search"></i></button>
-                        </form>
-                    </div>
-                    <!-- mobile search start -->
-                </div>
-            </div>
-        </header>
-        <!-- offcanvas overlay start -->
-        <div class="offcanvas-overlay"></div>
-        <!-- offcanvas overlay end -->
-        <!-- OffCanvas Wishlist Start -->
-        <div id="offcanvas-wishlist" class="offcanvas offcanvas-wishlist">
-            <div class="inner">
-                <div class="head">
-                    <span class="title">Wishlist</span>
-                    <button class="offcanvas-close">×</button>
-                </div>
-                <div class="body customScroll">
-                    <ul class="minicart-product-list">
-                        <li>
-                            <a href="single-product.html" class="image"><img src="assets/images/product-image/1.webp" alt="Cart product Image"></a>
-                            <div class="content">
-                                <a href="single-product.html" class="title">Modern Smart Phone</a>
-                                <span class="quantity-price">1 x <span class="amount">$21.86</span></span>
-                                <a href="#" class="remove">×</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="single-product.html" class="image"><img src="assets/images/product-image/2.webp" alt="Cart product Image"></a>
-                            <div class="content">
-                                <a href="single-product.html" class="title">Bluetooth Headphone</a>
-                                <span class="quantity-price">1 x <span class="amount">$13.28</span></span>
-                                <a href="#" class="remove">×</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="single-product.html" class="image"><img src="assets/images/product-image/3.webp" alt="Cart product Image"></a>
-                            <div class="content">
-                                <a href="single-product.html" class="title">Smart Music Box</a>
-                                <span class="quantity-price">1 x <span class="amount">$17.34</span></span>
-                                <a href="#" class="remove">×</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="foot">
-                    <div class="buttons">
-                        <a href="wishlist.html" class="btn btn-dark btn-hover-primary mt-30px">view wishlist</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- OffCanvas Wishlist End -->
-        <!-- OffCanvas Cart Start -->
-        <div id="offcanvas-cart" class="offcanvas offcanvas-cart">
-            <div class="inner">
-                <div class="head">
-                    <span class="title">Cart</span>
-                    <button class="offcanvas-close">×</button>
-                </div>
-                <div class="body customScroll">
-                    <ul class="minicart-product-list">
-                        <li>
-                            <a href="single-product.html" class="image"><img src="assets/images/product-image/1.webp" alt="Cart product Image"></a>
-                            <div class="content">
-                                <a href="single-product.html" class="title">Modern Smart Phone</a>
-                                <span class="quantity-price">1 x <span class="amount">$18.86</span></span>
-                                <a href="#" class="remove">×</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="single-product.html" class="image"><img src="assets/images/product-image/2.webp" alt="Cart product Image"></a>
-                            <div class="content">
-                                <a href="single-product.html" class="title">Bluetooth Headphone</a>
-                                <span class="quantity-price">1 x <span class="amount">$43.28</span></span>
-                                <a href="#" class="remove">×</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="single-product.html" class="image"><img src="assets/images/product-image/3.webp" alt="Cart product Image"></a>
-                            <div class="content">
-                                <a href="single-product.html" class="title">Smart Music Box</a>
-                                <span class="quantity-price">1 x <span class="amount">$37.34</span></span>
-                                <a href="#" class="remove">×</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="foot">
-                    <div class="buttons mt-30px">
-                        <a href="cart.html" class="btn btn-dark btn-hover-primary mb-30px">view cart</a>
-                        <a href="checkout.html" class="btn btn-outline-dark current-btn">checkout</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- OffCanvas Cart End -->
-        <!-- OffCanvas Menu Start -->
-        <div id="offcanvas-mobile-menu" class="offcanvas offcanvas-mobile-menu">
-            <button class="offcanvas-close"></button>
-            <div class="user-panel">
-                <ul>
-                    <li><a href="tel:0123456789"><i class="fa fa-phone"></i> +012 3456 789</a></li>
-                    <li><a href="mailto:demo@example.com"><i class="fa fa-envelope-o"></i> demo@example.com</a></li>
-                    <li><a href="my-account.html"><i class="fa fa-user"></i> Account</a></li>
-                </ul>
-            </div>
-            <div class="inner customScroll">
-                <div class="offcanvas-menu mb-4">
-                    <ul>
-                        <li><a href="#"><span class="menu-text">Home</span></a>
-                            <ul class="sub-menu">
-                                <li><a href="index.html"><span class="menu-text">Home 1</span></a></li>
-                                <li><a href="index-2.html"><span class="menu-text">Home 2</span></a></li>
-                            </ul>
-                        </li>
-                        <li><a href="about.html">About</a></li>
-                        <li>
-                            <a href="#"><span class="menu-text">Pages</span></a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="#"><span class="menu-text">Inner Pages</span></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="404.html">404 Page</a></li>
-                                        <li><a href="order-tracking.html">Order Tracking</a></li>
-                                        <li><a href="faq.html">Faq Page</a></li>
-                                        <li><a href="coming-soon.html">Coming Soon Page</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#"><span class="menu-text"> Other Shop Pages</span></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="cart.html">Cart Page</a></li>
-                                        <li><a href="checkout.html">Checkout Page</a></li>
-                                        <li><a href="compare.html">Compare Page</a></li>
-                                        <li><a href="wishlist.html">Wishlist Page</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#"><span class="menu-text">Related Shop Page</span></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="my-account.html">Account Page</a></li>
-                                        <li><a href="login.html">Login & Register Page</a></li>
-                                        <li><a href="empty-cart.html">Empty Cart Page</a></li>
-                                        <li><a href="thank-you-page.html">Thank You Page</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#"><span class="menu-text">Shop</span></a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="#"><span class="menu-text">Shop Page</span></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="shop-3-column.html">Shop 3 Column</a></li>
-                                        <li><a href="shop-4-column.html">Shop 4 Column</a></li>
-                                        <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
-                                        <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                        <li><a href="shop-list-left-sidebar.html">Shop List Left Sidebar</a>
-                                        </li>
-                                        <li><a href="shop-list-right-sidebar.html">Shop List Right Sidebar</a>
-                                        </li>
-                                        <li><a href="cart.html">Cart Page</a></li>
-                                        <li><a href="checkout.html">Checkout Page</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#"><span class="menu-text">product Details Page</span></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="single-product.html">Product Single</a></li>
-                                        <li><a href="single-product-variable.html">Product Variable</a></li>
-                                        <li><a href="single-product-affiliate.html">Product Affiliate</a></li>
-                                        <li><a href="single-product-group.html">Product Group</a></li>
-                                        <li><a href="single-product-tabstyle-2.html">Product Tab 2</a></li>
-                                        <li><a href="single-product-tabstyle-3.html">Product Tab 3</a></li>
-                                        <li><a href="single-product-slider.html">Product Slider</a></li>
-                                        <li><a href="single-product-gallery-left.html">Product Gallery Left</a>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#"><span class="menu-text">Single Product Page</span></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="single-product-gallery-right.html">Product Gallery
-                                                Right</a> </li>
-                                        <li><a href="single-product-sticky-left.html">Product Sticky Left</a>
-                                        </li>
-                                        <li><a href="single-product-sticky-right.html">Product Sticky Right</a>
-                                        </li>
-                                        <li><a href="compare.html">Compare Page</a></li>
-                                        <li><a href="wishlist.html">Wishlist Page</a></li>
-                                        <li><a href="my-account.html">Account Page</a></li>
-                                        <li><a href="login.html">Login & Register Page</a></li>
-                                        <li><a href="empty-cart.html">Empty Cart Page</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#"><span class="menu-text">Blog</span></a>
-                            <ul class="sub-menu">
-                                <li><a href="blog-grid.html">Blog Grid Page</a></li>
-                                <li><a href="blog-grid-left-sidebar.html">Grid Left Sidebar</a></li>
-                                <li><a href="blog-grid-right-sidebar.html">Grid Right Sidebar</a></li>
-                                <li><a href="blog-list.html">Blog List Page</a></li>
-                                <li><a href="blog-list-left-sidebar.html">List Left Sidebar</a></li>
-                                <li><a href="blog-list-right-sidebar.html">List Right Sidebar</a></li>
-                                <li><a href="blog-single.html">Blog Single Page</a></li>
-                                <li><a href="blog-single-left-sidebar.html">Single Left Sidebar</a></li>
-                                <li><a href="blog-single-right-sidebar.html">Single Right Sidbar</a>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
+        
+        <?php require ('header.php'); ?>
+
                 <!-- OffCanvas Menu End -->
                 <div class="offcanvas-social mt-auto">
                     <ul>
@@ -506,7 +62,7 @@
                         <h2 class="breadcrumb-title">Product Page</h2>
                         <!-- breadcrumb-list start -->
                         <ul class="breadcrumb-list">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                             <li class="breadcrumb-item active">Shop</li>
                         </ul>
                         <!-- breadcrumb-list end -->
@@ -519,16 +75,16 @@
         <div class="shop-category-area pt-100px pb-100px">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-9 order-lg-last col-md-12 order-md-first">
+                    <div class="col-md-12">
                         <!-- Shop Top Area Start -->
                         <div class="shop-top-bar d-flex">
                             <p class="compare-product"> <span>12</span> Product Found of <span>30</span></p>
                             <!-- Left Side End -->
                             <div class="shop-tab nav">
-                                <button data-bs-target="#shop-grid" data-bs-toggle="tab">
+                                <button class="active" data-bs-target="#shop-grid" data-bs-toggle="tab">
                                     <i class="fa fa-th" aria-hidden="true"></i>
                                 </button>
-                                <button class="active" data-bs-target="#shop-list" data-bs-toggle="tab">
+                                <button data-bs-target="#shop-list" data-bs-toggle="tab">
                                     <i class="fa fa-list" aria-hidden="true"></i>
                                 </button>
                             </div>
@@ -560,7 +116,7 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="tab-content">
-                                        <div class="tab-pane fade " id="shop-grid">
+                                        <div class="tab-pane fade show active" id="shop-grid">
                                             <div class="row mb-n-30px">
                                                 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 mb-30px">
                                                     <!-- Single Prodect -->
@@ -569,14 +125,14 @@
                                                         <span class="new">New</span>
                                                         </span>
                                                         <div class="thumb">
-                                                            <a href="single-product.html" class="image">
+                                                            <a href="single-product.php" class="image">
                                                                 <img src="assets/images/product-image/1.webp" alt="Product" />
                                                                 <img class="hover-image" src="assets/images/product-image/1.webp" alt="Product" />
                                                             </a>
                                                         </div>
                                                         <div class="content">
                                                             <span class="category"><a href="#">Accessories</a></span>
-                                                            <h5 class="title"><a href="single-product.html">Modern Smart Phone
+                                                            <h5 class="title"><a href="single-product.php">Modern Smart Phone
                                                                 </a>
                                                             </h5>
                                                             <span class="price">
@@ -953,7 +509,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade show active mb-n-30px " id="shop-list">
+                                        <div class="tab-pane fade mb-n-30px" id="shop-list">
                                             <div class="shop-list-wrapper mb-30px">
                                                 <div class="row">
                                                     <div class="col-md-5 col-lg-5 col-xl-4 mb-lm-30px">
@@ -1496,97 +1052,6 @@
                             <!--  Pagination Area End -->
                         </div>
                         <!-- Shop Bottom Area End -->
-                    </div>
-                    <!-- Sidebar Area Start -->
-                    <div class="col-lg-3 order-lg-first col-md-12 order-md-last">
-                        <div class="shop-sidebar-wrap">
-                            <!-- Sidebar single item -->
-                            <div class="sidebar-widget">
-                                <h4 class="sidebar-title">Top Categories</h4>
-                                <div class="sidebar-widget-category">
-                                    <ul>
-                                        <li><a href="#" class="selected m-0"> All
-                                                <span>(65)</span> </a></li>
-                                        <li><a href="#" class=""> Computer
-                                                <span>(12)</span> </a></li>
-                                        <li><a href="#" class=""> Covid-19
-                                                <span>(22)</span> </a></li>
-                                        <li><a href="#" class=""> Electronics
-                                                <span>(19)</span> </a></li>
-                                        <li><a href="#" class=""> Frame Sunglasses
-                                                <span>(17)</span> </a></li>
-                                        <li><a href="#" class=""> Furniture
-                                                <span>(7)</span> </a></li>
-                                        <li><a href="#" class=""> Genuine Leather
-                                                <span>(9)</span> </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- Sidebar single item -->
-                            <div class="sidebar-widget mt-8">
-                                <h4 class="sidebar-title">Price Filter</h4>
-                                <div class="price-filter">
-                                    <div class="price-slider-amount">
-                                        <input type="text" id="amount" class="p-0 h-auto lh-1" name="price" placeholder="Add Your Price" />
-                                    </div>
-                                    <div id="slider-range"></div>
-                                </div>
-                            </div>
-                            <!-- Sidebar single item -->
-                            <div class="sidebar-widget">
-                                <h4 class="sidebar-title">Color</h4>
-                                <div class="sidebar-widget-color">
-                                    <ul class="d-flex flex-wrap">
-                                        <li><a href="#" class="color-1"></a></li>
-                                        <li><a href="#" class="color-2"></a></li>
-                                        <li><a href="#" class="color-3"></a></li>
-                                        <li><a href="#" class="color-4"></a></li>
-                                        <li><a href="#" class="color-5"></a></li>
-                                        <li><a href="#" class="color-6"></a></li>
-                                        <li><a href="#" class="color-7"></a></li>
-                                        <li><a href="#" class="color-8"></a></li>
-                                        <li><a href="#" class="color-9"></a></li>
-                                        <li><a href="#" class="color-10"></a></li>
-                                        <li><a href="#" class="color-11"></a></li>
-                                        <li><a href="#" class="color-12"></a></li>
-                                        <li><a href="#" class="color-13"></a></li>
-                                        <li><a href="#" class="color-14"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- Sidebar single item -->
-                            <div class="sidebar-widget">
-                                <h4 class="sidebar-title">Size</h4>
-                                <div class="sidebar-widget-size">
-                                    <ul>
-                                        <li><a href="#" class="selected m-0"> All
-                                                <span>(6)</span> </a></li>
-                                        <li><a href="#" class=""> S <span>(12)</span> </a>
-                                        </li>
-                                        <li><a href="#" class=""> M <span>(21)</span> </a>
-                                        </li>
-                                        <li><a href="#" class=""> L <span>(16)</span> </a>
-                                        </li>
-                                        <li><a href="#" class=""> XL <span>(22)</span> </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- Sidebar single item -->
-                            <div class="sidebar-widget">
-                                <h4 class="sidebar-title">Brands</h4>
-                                <div class="sidebar-widget-brand">
-                                    <ul>
-                                        <li><a href="#" class="selected m-0"> Lakmeeto<span>(65)</span> </a></li>
-                                        <li><a href="#" class=""> Beautifill <span>(14)</span></a></li>
-                                        <li><a href="#" class=""> Made In GD <span>(21)</span></a></li>
-                                        <li><a href="#" class=""> Pecifico <span>(16)</span></a></li>
-                                        <li><a href="#" class=""> Xlovgtir<span>(12)</span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- Sidebar single item -->
-                        </div>
                     </div>
                 </div>
             </div>
