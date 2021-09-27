@@ -9,14 +9,14 @@
                     <div class="row justify-content-between align-items-center">
                         <div class="col">
                             <div class="welcome-text">
-                                <p>Bienvenido a TodoFono</p>
+                                <p>poner frase motivacional</p>
                             </div>
                         </div>
                         <div class="col d-none d-lg-block">
                             <div class="top-nav">
                                 <ul>
-                                    <li><a href="tel:0123456789"><i class="fa fa-phone"></i> +981 564 223</a></li>
-                                    <li><a href="mailto:demo@example.com"><i class="fa fa-envelope-o"></i> todofono@gmail.com</a></li>
+                                    <li><a href="tel:0123456789"><i class="fa fa-phone"></i> +979 555 630</a></li>
+                                    <li><a href="mailto:demo@example.com"><i class="fa fa-envelope-o"></i> administrador@todofon.net.pe</a></li>
                                     <li><a href="my-account.html"><i class="fa fa-user"></i> Cuenta</a></li>
                                 </ul>
                             </div>
@@ -31,13 +31,13 @@
                     <div class="row justify-content-between align-items-center">
                         <div class="col-lg-3 col">
                             <div class="header-logo">
-                                <a href="V_index.php"><img src="assets/images/logo/logo.png" alt="Site Logo" /></a>
+                                <a href="V_index.php"><img src="assets/images/logo/logo_todofon.png" alt="Site Logo" /></a>
                             </div>
                         </div>
                         <div class="col-lg-6 d-none d-lg-block">
                             <div class="search-element">
                                 <form action="#">
-                                    <input type="text" placeholder="Buscar" />
+                                    <input type="text" placeholder="Busca aquí tu producto" />
                                     <button><i class="pe-7s-search"></i></button>
                                 </form>
                             </div>
@@ -75,7 +75,7 @@
                         <div class="col-lg-6 d-none d-lg-block">
                             <div class="search-element">
                                 <form action="#">
-                                    <input type="text" placeholder="Buscar" />
+                                    <input type="text" placeholder="Busca aquí tu producto" />
                                     <button><i class="pe-7s-search"></i></button>
                                 </form>
                             </div>
@@ -111,7 +111,7 @@
                                 
                                 <li><a href="shop.php">Tienda</a></li>
                                 
-                                <li><a href="contact.html">Contacto</a></li>
+                                <li><a href="contact.php">Contacto</a></li>
                             </ul>
                         </div>
                     </div>
@@ -123,7 +123,7 @@
                     <!-- mobile search start -->
                     <div class="search-element max-width-100">
                         <form action="#">
-                            <input type="text" placeholder="Buscar" />
+                            <input type="text" placeholder="Busca aquí tu producto" />
                             <button><i class="pe-7s-search"></i></button>
                         </form>
                     </div>
@@ -229,8 +229,8 @@
             <button class="offcanvas-close"></button>
             <div class="user-panel">
                 <ul>
-                    <li><a href="tel:0123456789"><i class="fa fa-phone"></i> +012 3456 789</a></li>
-                    <li><a href="mailto:demo@example.com"><i class="fa fa-envelope-o"></i> demo@example.com</a></li>
+                    <li><a href="tel:0123456789"><i class="fa fa-phone"></i> +979 555 630</a></li>
+                    <li><a href="mailto:demo@example.com"><i class="fa fa-envelope-o"></i> administrador@todofon.net.pe</a></li>
                     <li><a href="my-account.html"><i class="fa fa-user"></i> Cuenta</a></li>
                 </ul>
             </div>
@@ -241,7 +241,7 @@
                         
                         <li><a href="shop.php">Tienda</a></li>
 
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.php">Contacto</a></li>
                     </ul>
                 </div>
 </body>
