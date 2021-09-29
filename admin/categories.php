@@ -58,8 +58,7 @@ $res=mysqli_query($con,$sql);
                 <div class="sidebar__top">
                     <div class="container container--sm">
                         <a class="sidebar__logo" href="index.html">
-                            <img class="sidebar__logo-icon" src="img/content/logotype.svg" alt="#" width="44" />
-                            <div class="sidebar__logo-text">arion</div>
+                            <div class="sidebar__logo-text">TodoFono</div>
                         </a>
                     </div>
                 </div>

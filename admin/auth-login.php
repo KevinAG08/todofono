@@ -1,7 +1,10 @@
 <?php
+
 require('connection.inc.php');
 require('functions.inc.php');
+
 $msg='';
+
 if(isset($_POST['submit'])){
 	$username=get_safe_value($con,$_POST['username']);
 	$password=get_safe_value($con,$_POST['password']);
@@ -462,9 +465,7 @@ if(isset($_POST['submit'])){
                     <img class="auth-bg-image-dark" src="img/content/auth-bg-dark.jpg" alt="#">
                 </div>
                 <div class="page-auth__left">
-                    <h1 class="page-auth__title">Welcome to <span class="text-theme">Arion</span></h1>
-                    <p class="page-auth__text">Duis aute irure dolor in reprehenderit in voluptate, qui in ea voluptate velit esse, quam
-                        <br>nihil molestiae consequatur, vel illum, obcaecati cupiditate nons.</p>
+                    <h1 class="page-auth__title">Bienvenido a <span class="text-theme">TodoFono</span></h1>
                 </div>
                 <div class="page-auth__right">
                     <div class="auth-panel">
@@ -474,10 +475,9 @@ if(isset($_POST['submit'])){
                                     <div class="auth-panel__body-wrapper">
                                         <div class="auth-panel__logotype">
                                             <div class="auth-logo">
-                                                <img class="auth-logo__icon" src="img/content/logotype.svg" width="44" alt="#" />
-                                                <div class="auth-logo__text">arion</div>
+                                                <div class="auth-logo__text">TodoFono</div>
                                             </div>
-                                            <p class="auth-panel__text">Please login to your account.</p>
+                                            <p class="auth-panel__text">Por favor, acceda con su cuenta</p>
                                         </div>
                                         <div class="form-group">
                                             <div class="input-group input-group--prepend"><span class="input-group__prepend">
@@ -503,13 +503,13 @@ if(isset($_POST['submit'])){
                                                             <input type="checkbox" checked><span class="checkbox__marker"><span class="checkbox__marker-icon">
                                                                 <svg class="icon-icon-checked">
                                                                 <use xlink:href="#icon-checked"></use>
-                                                                </svg></span></span><span class="ml-2">Remember Me</span>
+                                                                </svg></span></span><span class="ml-2">Recordarme</span>
                                                         </label>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-auto">
-                                                <div class="form-group"><a class="text-blue" href="auth-forgot-v3.html">Forgot Password?</a>
+                                                <div class="form-group"><a class="text-blue" href="auth-forgot-v3.html">¿Olvidó su contraseña?</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -518,7 +518,7 @@ if(isset($_POST['submit'])){
                                             <button class="button button--primary button--block" type="submit" name="submit" ><span class="button__text">Iniciar sesión</span>
                                             </button>
                                         </div>
-                                        <div class="auth-panel__divider">OR</div>
+                                        <div class="auth-panel__divider">O</div>
                                         <div class="auth-panel__social">
                                             <a class="auth-panel__social-link" href="#">
                                                 <img src="img/content/s-facebook.svg" alt="#">
@@ -536,7 +536,7 @@ if(isset($_POST['submit'])){
                                     </div>
                                 </div>
                                 <div class="auth-panel__footer">
-                                    <div class="auth-panel__sign">Don't have an account? <a class="text-blue" href="auth-create-v3.html">Sign Up</a>
+                                    <div class="auth-panel__sign">¿No tiene una cuenta? <a class="text-blue" href="auth-create-v3.html">Registrese aquí</a>
                                     </div>
                                 </div>
                             </div>

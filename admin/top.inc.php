@@ -466,7 +466,7 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
                         <svg class="icon-icon-search">
                           <use xlink:href="#icon-search"></use>
                         </svg></span>
-                                        <input class="form-search__input" type="text" placeholder="Search..." />
+                                        <input class="form-search__input" type="text" placeholder="Buscar" />
                                     </div>
                                 </form>
                             </div>
