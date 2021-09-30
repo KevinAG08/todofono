@@ -1,10 +1,8 @@
 <?php
-
 require('connection.inc.php');
 require('functions.inc.php');
 
 $msg='';
-
 if(isset($_POST['submit'])){
 	$username=get_safe_value($con,$_POST['username']);
 	$password=get_safe_value($con,$_POST['password']);
@@ -19,13 +17,10 @@ if(isset($_POST['submit'])){
 	}else{
 		$msg="Datos de inicio de sesión incorrectos";	
 	}
-	
 }
 ?>
-
 <!DOCTYPE html>
 <html class="no-js" lang="en" data-theme="light">
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
