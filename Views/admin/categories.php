@@ -18,14 +18,16 @@ if(isset($_GET['type']) && $_GET['type']!=''){
 		mysqli_query($con,$delete_sql);
 	}
 }
+
+
+
 // agregar categorias
-if(isset($_POST['submit_add'])){
+if(isset($_POST['submit'])){
     $categories=get_safe_value($con,$_POST['categories']);
 	mysqli_query($con,"insert into categoria(categoria_nombre,categoria_estado) values('$categories','1')");
-	header('location:categories.php');
-	die();	
 }
 
+// mostrar categorias
 $sql="select * from categoria order by id_categoria asc";
 $res=mysqli_query($con,$sql);
 ?>
@@ -375,8 +377,6 @@ $res=mysqli_query($con,$sql);
                                             echo "<div class='table__status'><span class='table__status-icon'><a href='?type=status&operation=active&id=".$row['id_categoria']."'>Desactivado</a></span>&nbsp;";
                                             } ?>                  
                                     </td>
-                                    
-                                    
                                     <td class="table__td table__actions">
                                         <div class="items-more">
                                             <button class="items-more__button">
@@ -472,8 +472,10 @@ $res=mysqli_query($con,$sql);
                                     <div class="modal__container">
                                         <div class="modal__footer-buttons">
                                             <div class="modal__footer-button">
-                                                <button class="button button--primary button--block" name="submit" type="submit" data-dismiss="modal" data-modal="#addProductSuccess"><span class="button__text">Crear</span>
+                                                <button class="button button--primary button--block" name="submit" type="submit" data-dismiss="modal"><span class="button__text">Crear</span>
                                                 </button>
+                                                <!--<button class="button button--primary button--block" name="submit" type="submit" data-dismiss="modal" data-modal="#addProductSuccess"><span class="button__text">Crear</span>
+                                                </button>-->
                                             </div>
                                             <div class="modal__footer-button">
                                                 <button class="button button--secondary button--block" data-dismiss="modal"><span class="button__text">Cancelar</span>
@@ -483,20 +485,6 @@ $res=mysqli_query($con,$sql);
                                     </div>
                                 </div>
                             </form>
-                        </div>
-                    </div>
-                    <div class="modal__footer">
-                        <div class="modal__container">
-                            <div class="modal__footer-buttons">
-                                <div class="modal__footer-button">
-                                    <button class="button button--primary button--block" name="submit" type="submit" data-dismiss="modal" data-modal="#addProductSuccess"><span class="button__text">Crear</span>
-                                    </button>
-                                </div>
-                                <div class="modal__footer-button">
-                                    <button class="button button--secondary button--block" data-dismiss="modal"><span class="button__text">Cancelar</span>
-                                    </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
