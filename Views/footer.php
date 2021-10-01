@@ -11,10 +11,10 @@
                             <!-- Start single blog -->
                             <div class="col-md-6 col-lg-3 mb-md-30px mb-lm-30px">
                                 <div class="single-wedge">
-                                    <div class="footer-logo">
-                                        <a href="V_index.php"><img src="assets/images/logo/footer-logo.png" alt=""></a>
+                                    <div>
+                                        <a href="V_index.php"><?php echo "TodoFono"; ?></a>
                                     </div>
-                                    <p class="about-text">Lorem ipsum dolor sit amet consl adipisi elit, sed do eiusmod templ incididunt ut labore
+                                    <p class="about-text">Somos una e
                                     </p>
                                     <ul class="link-follow">
                                         <li>
