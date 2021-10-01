@@ -18,36 +18,13 @@ if(isset($_GET['type']) && $_GET['type']!=''){
 		mysqli_query($con,$delete_sql);
 	}
 }
-
-if(isset($_POST['submit'])){
-	$categories=get_safe_value($con,$_POST['categories']);
-	$res=mysqli_query($con,"select * from categorias where categoria_nombre='$categories'");
-	$check=mysqli_num_rows($res);
-	if($check>0){
-		if(isset($_GET['id']) && $_GET['id']!=''){
-			$getData=mysqli_fetch_assoc($res);
-			if($id==$getData['id']){
-			
-			}else{
-				$msg="Categories already exist";
-			}
-		}else{
-			$msg="Categories already exist";
-		}
-	}
-	
-	if($msg==''){
-		if(isset($_GET['id']) && $_GET['id']!=''){
-			mysqli_query($con,"update categories set categories='$categories' where id='$id'");
-		}else{
-			mysqli_query($con,"insert into categories(categories,status) values('$categories','1')");
-		}
-		header('location:categories.php');
-		die();
-	}
+// agregar categorias
+if(isset($_POST['submit_add'])){
+    $categories=get_safe_value($con,$_POST['categories']);
+	mysqli_query($con,"insert into categoria(categoria_nombre,categoria_estado) values('$categories','1')");
+	header('location:categories.php');
+	die();	
 }
-
-
 
 $sql="select * from categoria order by id_categoria asc";
 $res=mysqli_query($con,$sql);
@@ -487,7 +464,21 @@ $res=mysqli_query($con,$sql);
                                     <div class="col-12 form-group form-group--lg">
                                         <label class="form-label">Nombre de la Marca de Celular</label>
                                         <div class="input-group">
-                                            <input class="input" type="text" placeholder="" value="Apple Watch Series 4" required>
+                                            <input class="input" type="text" placeholder="Insertar marcas de celular" name="categories" value="Apple Watch Series 4" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal__footer">
+                                    <div class="modal__container">
+                                        <div class="modal__footer-buttons">
+                                            <div class="modal__footer-button">
+                                                <button class="button button--primary button--block" name="submit" type="submit" data-dismiss="modal" data-modal="#addProductSuccess"><span class="button__text">Crear</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal__footer-button">
+                                                <button class="button button--secondary button--block" data-dismiss="modal"><span class="button__text">Cancelar</span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -525,7 +516,7 @@ $res=mysqli_query($con,$sql);
                     </div>
                     <div class="modal-compact__buttons">
                         <div class="modal-compact__button-item">
-                            <button class="modal-compact__button button" data-dismiss="modal" data-modal="#addProduct"><span class="button__text">Add new product</span>
+                            <button class="modal-compact__button button" name="submit_add" type="submit" data-dismiss="modal" data-modal="#addProduct"><span class="button__text">Add new product</span>
                             </button>
                         </div>
                         <div class="modal-compact__button-item">
