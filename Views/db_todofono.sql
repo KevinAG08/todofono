@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-10-2021 a las 06:38:17
+-- Tiempo de generación: 01-10-2021 a las 22:41:54
 -- Versión del servidor: 10.4.21-MariaDB
--- Versión de PHP: 7.4.23
+-- Versión de PHP: 8.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -87,10 +87,43 @@ INSERT INTO `admin_usuario` (`idadmin`, `admin_username`, `admin_password`) VALU
 
 CREATE TABLE `categoria` (
   `id_categoria` int(2) NOT NULL,
-  `producto_id` int(3) NOT NULL,
   `categoria_nombre` varchar(30) NOT NULL,
   `categoria_estado` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `categoria`
+--
+
+INSERT INTO `categoria` (`id_categoria`, `categoria_nombre`, `categoria_estado`) VALUES
+(1, 'gola', 1),
+(52, 'hola', 1),
+(53, 'hola', 1),
+(55, 'dffffff', 1),
+(59, 'yyu', 1),
+(60, '56yuu', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `contacto`
+--
+
+CREATE TABLE `contacto` (
+  `id_contacto` int(3) NOT NULL,
+  `contacto_nombre` varchar(100) NOT NULL,
+  `contacto_email` varchar(100) NOT NULL,
+  `contacto_phone` varchar(15) NOT NULL,
+  `contacto_comentario` text NOT NULL,
+  `contacto_data` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `contacto`
+--
+
+INSERT INTO `contacto` (`id_contacto`, `contacto_nombre`, `contacto_email`, `contacto_phone`, `contacto_comentario`, `contacto_data`) VALUES
+(1, 'Richard Espiritu', 'respiritu@gmail.com', '935273129', 'PRUEBA DE COMENTARIOS', '2021-10-01 05:25:08');
 
 -- --------------------------------------------------------
 
@@ -115,6 +148,14 @@ CREATE TABLE `producto` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Volcado de datos para la tabla `producto`
+--
+
+INSERT INTO `producto` (`id_producto`, `id_categoria`, `producto_nombre`, `producto_mrp`, `producto_precio`, `producto_stock`, `producto_imagen`, `producto_sdescuento`, `producto_descripcion`, `producto_metatitle`, `producto_metadescripcion`, `producto_keyword`, `producto_estado`) VALUES
+(1, 1, 'iphone 20', 41.20, 1000.20, 50, '', '45454', 'dgfdgfd', 'fgfg', 'gfdg', 'dgfg', 1),
+(2, 52, 'huawei y7', 5553.11, 1000.00, 10, 'sdsds.png', 'ghghgh', 'es un celular bonito', 'huawei |', 'huawei ', 'sdsderer', 1);
+
+--
 -- Índices para tablas volcadas
 --
 
@@ -128,8 +169,13 @@ ALTER TABLE `admin_usuario`
 -- Indices de la tabla `categoria`
 --
 ALTER TABLE `categoria`
-  ADD PRIMARY KEY (`id_categoria`),
-  ADD KEY `fk_producto_id` (`producto_id`);
+  ADD PRIMARY KEY (`id_categoria`);
+
+--
+-- Indices de la tabla `contacto`
+--
+ALTER TABLE `contacto`
+  ADD PRIMARY KEY (`id_contacto`);
 
 --
 -- Indices de la tabla `producto`
@@ -145,29 +191,25 @@ ALTER TABLE `producto`
 -- AUTO_INCREMENT de la tabla `admin_usuario`
 --
 ALTER TABLE `admin_usuario`
-  MODIFY `idadmin` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idadmin` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `id_categoria` int(2) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_categoria` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
+
+--
+-- AUTO_INCREMENT de la tabla `contacto`
+--
+ALTER TABLE `contacto`
+  MODIFY `id_contacto` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `id_producto` int(3) NOT NULL AUTO_INCREMENT;
-
---
--- Restricciones para tablas volcadas
---
-
---
--- Filtros para la tabla `categoria`
---
-ALTER TABLE `categoria`
-  ADD CONSTRAINT `fk_producto_id` FOREIGN KEY (`producto_id`) REFERENCES `producto` (`id_producto`);
+  MODIFY `id_producto` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
