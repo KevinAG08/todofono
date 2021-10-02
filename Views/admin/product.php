@@ -29,7 +29,7 @@ $res=mysqli_query($con,$sql);
 	<div class="orders">
 	   <div class="row">
 		  <div class="col-xl-12">
-			 <div class="card">
+			 <div class="card"> 
 				<div class="card-body">
 				   <h4 class="box-title">Celulares </h4>
 				   <h4 class="box-link"><a href="manage_product.php">Agregar Celular</a> </h4>
