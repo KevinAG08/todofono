@@ -5,12 +5,12 @@ if(isset($_GET['type']) && $_GET['type']!=''){
 	$type=get_safe_value($con,$_GET['type']);
 	if($type=='delete'){
 		$id=get_safe_value($con,$_GET['id']);
-		$delete_sql="delete from users where id='$id'";
+		$delete_sql="delete from usuario where id_usuario='$id'";
 		mysqli_query($con,$delete_sql);
 	}
 }
 
-$sql="select * from users order by id desc";
+$sql="select * from usuario order by id_usuario desc";
 $res=mysqli_query($con,$sql);
 ?>
 <div class="content pb-0">
@@ -19,7 +19,7 @@ $res=mysqli_query($con,$sql);
 		  <div class="col-xl-12">
 			 <div class="card">
 				<div class="card-body">
-				   <h4 class="box-title">Users </h4>
+				   <h4 class="box-title">Nuestros Usuarios </h4>
 				</div>
 				<div class="card-body--">
 				   <div class="table-stats order-table ov-h">
@@ -28,10 +28,10 @@ $res=mysqli_query($con,$sql);
 							<tr>
 							   <th class="serial">#</th>
 							   <th>ID</th>
-							   <th>Name</th>
+							   <th>Nombre</th>
 							   <th>Email</th>
-							   <th>Mobile</th>
-							   <th>Date</th>
+							   <th>Teléfono</th>
+							   <th>Fecha</th>
 							   <th></th>
 							</tr>
 						 </thead>
@@ -41,14 +41,14 @@ $res=mysqli_query($con,$sql);
 							while($row=mysqli_fetch_assoc($res)){?>
 							<tr>
 							   <td class="serial"><?php echo $i?></td>
-							   <td><?php echo $row['id']?></td>
-							   <td><?php echo $row['name']?></td>
-							   <td><?php echo $row['email']?></td>
-							   <td><?php echo $row['mobile']?></td>
-							   <td><?php echo $row['added_on']?></td>
+							   <td><?php echo $row['id_usuario']?></td>
+							   <td><?php echo $row['usuario_nombre']?></td>
+							   <td><?php echo $row['usuario_email']?></td>
+							   <td><?php echo $row['usuario_phone']?></td>
+							   <td><?php echo $row['usuario_data']?></td>
 							   <td>
 								<?php
-								echo "<span class='badge badge-delete'><a href='?type=delete&id=".$row['id']."'>Delete</a></span>";
+								echo "<span class='badge badge-delete'><a href='?type=delete&id=".$row['id_usuario']."'>Eliminar</a></span>";
 								?>
 							   </td>
 							</tr>
