@@ -30,7 +30,7 @@ $res=mysqli_query($con,$sql);
 							   <th>ID</th>
 							   <th>Nombre</th>
 							   <th>Email</th>
-							   <th>Teléfono</th>
+							   <th>Asunto</th>
 							   <th>Consulta</th>
 							   <th>Fecha</th>
 							   <th></th>
