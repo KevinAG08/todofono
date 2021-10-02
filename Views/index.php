@@ -1,61 +1,6 @@
-<!DOCTYPE html>
-<html lang="zxx" dir="ltr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TodoFono</title>
-    <meta name="robots" content="index, follow" />
-    <meta name="description" content="Hmart-Smart Product eCommerce html Template">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
-    <!-- CSS
-    ============================================ -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/font.awesome.css" />
-    <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css" />
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/venobox.css">
-    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Minify Version -->
-    <!-- <link rel="stylesheet" href="assets/css/plugins.min.css">
-    <link rel="stylesheet" href="assets/css/style.min.css"> -->
-</head>
-
-<body>
-    <div class="main-wrapper">
-
-        <?php require ('header.php'); ?>
-        
-                <!-- OffCanvas Menu End -->
-                <div class="offcanvas-social mt-auto">
-                    <ul>
-                        <li>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-google"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-youtube"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- OffCanvas Menu End -->
-        <!-- Hero/Intro Slider Start -->
-
+<?php require('top.php')?>
+    
+    <!-- Hero/Intro Slider Start -->
         <div class="section ">
             <div class="hero-slider swiper-container slider-nav-style-1 slider-dot-style-1">
                 <!-- Hero slider Active -->
@@ -66,7 +11,7 @@
                             <div class="row h-100">
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 align-self-center sm-center-view">
                                     <div class="hero-slide-content slider-animated-1">
-                                        <span class="category">Bienvenido a TodoFono</span>
+                                        <span class="category">Welcome To Hmart</span>
                                         <h2 class="title-1">Your Home <br>
                                         Smart Devices & <br>
                                          Best Solution </h2>
@@ -89,7 +34,7 @@
                             <div class="row h-100">
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 align-self-center sm-center-view">
                                     <div class="hero-slide-content slider-animated-1">
-                                        <span class="category">Bienvenido a TodoFono</span>
+                                        <span class="category">Welcome To Hmart</span>
                                         <h2 class="title-1">Your Home <br>
                                         Smart Devices & <br>
                                          Best Solution </h2>
@@ -163,11 +108,11 @@
                         <!-- Tab Start -->
                         <div class="tab-slider d-md-flex justify-content-md-between align-items-md-center">
                             <ul class="product-tab-nav nav justify-content-start align-items-center">
-                                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#nuevosmodelos">Nuevos Modelos</button>
+                                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#newarrivals">New Arrivals</button>
                                 </li>
-                                <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#masvendidos">Más Vendidos</button>
+                                <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#toprated">Top Rated</button>
                                 </li>
-                                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#destacados">Destacados</button>
+                                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#featured">Featured</button>
                                 </li>
                             </ul>
                         </div>
@@ -982,8 +927,6 @@
             </div>
         </div>
         <!-- Product Area End -->
-    
-
         <!-- Fashion Area Start -->
         <div class="fashion-area" data-bg-image="assets/images/fashion/fashion-bg.webp">
             <div class="container h-100">
@@ -1002,7 +945,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="section-title text-center">
-                            <h2 class="title">Ofertas Destacadas</h2>
+                            <h2 class="title">Featured Offers</h2>
                             <p>There are many variations of passages of Lorem Ipsum available</p>
                         </div>
                     </div>
@@ -1205,217 +1148,60 @@
             </div>
         </div>
         <!-- Brand area end -->
-    
+        <!-- Blog area start from here -->
+        <div class="main-blog-area pb-100px">
+            <div class="container">
+                <!-- section title start -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center mb-30px0px">
+                            <h2 class="title">Latest Blog</h2>
+                            <p> There are many variations of passages of Lorem Ipsum available</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- section title start -->
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6 mb-xs-30px">
+                        <div class="single-blog">
+                            <div class="blog-image">
+                                <a href="blog-single-left-sidebar.html"><img src="assets/images/blog-image/1.webp" class="img-responsive w-100" alt=""></a>
+                            </div>
+                            <div class="blog-text">
+                                <div class="blog-athor-date line-height-1">
+                                    <span class="blog-date"><i class="fa fa-calendar" aria-hidden="true"></i> 27,Jun 2030</span>
+                                    <span><a class="blog-author" href="blog-grid.html"><i class="fa fa-user" aria-hidden="true"></i> Wild Nick</a></span>
+                                </div>
+                                <h5 class="blog-heading"><a class="blog-heading-link" href="blog-single-left-sidebar.html">10 Quick Tips About Smart Product</a></h5>
+                                <p>Lorem ipsum dolor sit amet consl adipisi elit, sed do eiusmod templ incididunt ut labore</p>
+                                <a href="blog-single-left-sidebar.html" class="btn btn-primary blog-btn"> Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single blog -->
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-blog">
+                            <div class="blog-image">
+                                <a href="blog-single-left-sidebar.html"><img src="assets/images/blog-image/2.webp" class="img-responsive w-100" alt=""></a>
+                            </div>
+                            <div class="blog-text">
+                                <div class="blog-athor-date line-height-1">
+                                    <span class="blog-date"><i class="fa fa-calendar" aria-hidden="true"></i> 27,Jun 2030</span>
+                                    <span><a class="blog-author" href="blog-grid.html"><i class="fa fa-user" aria-hidden="true"></i> Oaklee Odom</a></span>
+                                </div>
+                                <h5 class="blog-heading"><a class="blog-heading-link" href="blog-single-left-sidebar.html">5 Real-Life Lessons About Smart Product</a></h5>
+                                <p>Lorem ipsum dolor sit amet consl adipisi elit, sed do eiusmod templ incididunt ut labore</p>
+                                <a href="blog-single-left-sidebar.html" class="btn btn-primary blog-btn"> Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single blog -->
+                </div>
+            </div>
+        </div>
+        <!-- Blog area end here -->
+
         
-    </div>
-
-    <?php require ('footer.php'); ?>
-
-    <!-- Modal -->
-    <div class="modal modal-2 fade" id="exampleModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <i class="pe-7s-close"></i></button>
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-12 col-xs-12 mb-lm-30px mb-md-30px mb-sm-30px">
-                            <!-- Swiper -->
-                            <div class="swiper-container gallery-top">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/zoom-image/1.webp" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/zoom-image/2.webp" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/zoom-image/3.webp" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/zoom-image/4.webp" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/zoom-image/5.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-container gallery-thumbs mt-20px slider-nav-style-1 small-nav">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/small-image/1.webp" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/small-image/2.webp" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/small-image/3.webp" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/small-image/4.webp" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/small-image/5.webp" alt="">
-                                    </div>
-                                </div>
-                                <!-- Add Arrows -->
-                                <div class="swiper-buttons">
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-delay="200">
-                            <div class="product-details-content quickview-content">
-                                <h2>Modern Smart Phone</h2>
-                                <div class="pricing-meta">
-                                    <ul class="d-flex">
-                                        <li class="new-price">$20.90</li>
-                                    </ul>
-                                </div>
-                                <div class="pro-details-rating-wrap">
-                                    <div class="rating-product">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <span class="read-review"><a class="reviews" href="#">( 2 Review )</a></span>
-                                </div>
-                                <p class="mt-30px">Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmll tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mill veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exet commodo consequat. Duis aute irure dolor</p>
-                                <div class="pro-details-categories-info pro-details-same-style d-flex m-0">
-                                    <span>SKU:</span>
-                                    <ul class="d-flex">
-                                        <li>
-                                            <a href="#">Ch-256xl</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="pro-details-categories-info pro-details-same-style d-flex m-0">
-                                    <span>Categories: </span>
-                                    <ul class="d-flex">
-                                        <li>
-                                            <a href="#">Smart Device, </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">ETC</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="pro-details-categories-info pro-details-same-style d-flex m-0">
-                                    <span>Tags: </span>
-                                    <ul class="d-flex">
-                                        <li>
-                                            <a href="#">Smart Device, </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Phone</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="pro-details-quality">
-                                    <div class="cart-plus-minus">
-                                        <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1" />
-                                    </div>
-                                    <div class="pro-details-cart">
-                                        <button class="add-cart"> Add To
-                                            Cart</button>
-                                    </div>
-                                    <div class="pro-details-compare-wishlist pro-details-wishlist ">
-                                        <a href="wishlist.html"><i class="pe-7s-like"></i></a>
-                                    </div>
-                                </div>
-                                <div class="payment-img">
-                                    <a href="#"><img src="assets/images/icons/payment.png" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal end -->
-    <!-- Modal Cart -->
-    <div class="modal customize-class fade" id="exampleModal-Cart" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="pe-7s-close"></i></button>
-                    <div class="tt-modal-messages">
-                        <i class="pe-7s-check"></i> Added to cart successfully!
-                    </div>
-                    <div class="tt-modal-product">
-                        <div class="tt-img">
-                            <img src="assets/images/product-image/1.webp" alt="Modern Smart Phone">
-                        </div>
-                        <h2 class="tt-title"><a href="#">Modern Smart Phone</a></h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>     
-    <!-- Modal wishlist -->
-    <div class="modal customize-class fade" id="exampleModal-Wishlist" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="pe-7s-close"></i></button>
-                    <div class="tt-modal-messages">
-                        <i class="pe-7s-check"></i> Added to Wishlist successfully!
-                    </div>
-                    <div class="tt-modal-product">
-                        <div class="tt-img">
-                            <img src="assets/images/product-image/1.webp" alt="Modern Smart Phone">
-                        </div>
-                        <h2 class="tt-title"><a href="#">Modern Smart Phone</a></h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>    
-    <!-- Modal compare -->
-    <div class="modal customize-class fade" id="exampleModal-Compare" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="pe-7s-close"></i></button>
-                    <div class="tt-modal-messages">
-                        <i class="pe-7s-check"></i> Added to compare successfully!
-                    </div>
-                    <div class="tt-modal-product">
-                        <div class="tt-img">
-                            <img src="assets/images/product-image/1.webp" alt="Modern Smart Phone">
-                        </div>
-                        <h2 class="tt-title"><a href="#">Modern Smart Phone</a></h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<?php require('footer.php')?>   
 
 
-    <!-- Global Vendor, plugins JS -->
-    <!-- JS Files
-    ============================================ -->
-    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
-    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="assets/js/plugins/jquery.countdown.min.js"></script>
-    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
-    <script src="assets/js/plugins/scrollUp.js"></script>
-    <script src="assets/js/plugins/venobox.min.js"></script>
-    <script src="assets/js/plugins/jquery-ui.min.js"></script>
-    <script src="assets/js/plugins/mailchimp-ajax.js"></script>
-
-    <!-- Minify Version -->
-    <!-- <script src="assets/js/vendor.min.js"></script>
-    <script src="assets/js/plugins.min.js"></script>
-    <script src="assets/js/main.min.js"></script> -->
-
-    <!--Main JS (Common Activation Codes)-->
-    <script src="assets/js/main.js"></script>
-</body>
-
-</html>
