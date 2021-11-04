@@ -1,14 +1,3 @@
-<?php
-require('connection.inc.php');
-require('functions.inc.php');
-$cat_res=mysqli_query($con,"select * from categoria where categoria_estado=1 order by categoria_nombre asc");
-$cat_arr=array();
-while($row=mysqli_fetch_assoc($cat_res)){
-	$cat_arr[]=$row;	
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="zxx" dir="ltr">
 
@@ -144,22 +133,19 @@ while($row=mysqli_fetch_assoc($cat_res)){
                     <div class="header-nav">
                         <div class="main-menu position-relative">
                             <ul>
-                                <li><a href="index.php">Inicio</a></li>
+                                <li><a href="#">Inicio</a></li>
                                 <li><a href="about.php">Sobre Nosotros</a></li>
                                 
-                                <li class="dropdown"><a href="shop.php">Tienda <i class="fa fa-angle-down"></i></a>
-                                    <ul class="sub-menu">
-                                    <?php
-									foreach($cat_arr as $list){
-										?>
-                                        <li><a href="categories.php?id=<?php echo $list['id_categoria']?>"><?php echo $list['categoria_nombre']?></a></li>
-                                        <?php
-                                    }
-									?>
-                                    </ul>
-                                </li>
+                                <li><a href="shop.php">Tienda</a></li>
                                 
                                 <li><a href="contact.php">Contáctanos</a></li>
+                                <!-- Estilo simple categoria
+                                <li class="dropdown"><a href="#">Inicio <i class="fa fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="index.html">Home 1</a></li>
+                                        <li><a href="index-2.html">Home 2</a></li>
+                                    </ul>
+                                </li>-->
                                 <!-- OTRO ESTILO DE CATEGORIAS
                                 <li class="dropdown position-static"><a href="about.html">Pages <i class="fa fa-angle-down"></i></a>
                                     <ul class="mega-menu d-block">
