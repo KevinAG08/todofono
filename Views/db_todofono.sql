@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-10-2021 a las 12:33:29
+-- Tiempo de generación: 01-10-2021 a las 23:58:31
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 8.0.10
 
@@ -116,31 +116,7 @@ CREATE TABLE `producto` (
 
 INSERT INTO `producto` (`id_producto`, `id_categoria`, `producto_nombre`, `producto_mrp`, `producto_precio`, `producto_stock`, `producto_imagen`, `producto_sdescuento`, `producto_descripcion`, `producto_metatitle`, `producto_metadescripcion`, `producto_keyword`, `producto_estado`) VALUES
 (1, 1, 'iphone 20', 41.20, 1000.20, 50, '', '45454', 'dgfdgfd', 'fgfg', 'gfdg', 'dgfg', 1),
-(2, 52, 'huawei y7', 5553.11, 1000.00, 10, 'sdsds.png', 'ghghgh', 'es un celular bonito', 'huawei |', 'huawei ', 'sdsderer', 1),
-(3, 0, '', 0.00, 0.00, 0, '900028618_1.jpg', '', '', '', '', '', 1),
-(4, 1, 'xiami 23', 0.00, 15.00, 100, '427452761_2.jpg', 'cvcv', 'sdsds', 'sdasd', '', 'asdasd', 1),
-(5, 55, 'xiami 23545', 10.00, 15.00, 100, '995759821_sistema de cubos o cestas.png', 'dfgfdg', 'dgd', 'dg', 'dg', 'fdgfdg', 1);
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `usuario`
---
-
-CREATE TABLE `usuario` (
-  `id_usuario` int(3) NOT NULL,
-  `usuario_nombre` varchar(50) NOT NULL,
-  `usuario_email` varchar(100) NOT NULL,
-  `usuario_phone` varchar(15) NOT NULL,
-  `usuario_data` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `usuario`
---
-
-INSERT INTO `usuario` (`id_usuario`, `usuario_nombre`, `usuario_email`, `usuario_phone`, `usuario_data`) VALUES
-(1, 'RICHARD JHON', 'jhones´piritu6d@gmail.com', '1516165', '2021-10-02 09:39:37');
+(2, 52, 'huawei y7', 5553.11, 1000.00, 10, 'sdsds.png', 'ghghgh', 'es un celular bonito', 'huawei |', 'huawei ', 'sdsderer', 1);
 
 --
 -- Índices para tablas volcadas
@@ -171,12 +147,6 @@ ALTER TABLE `producto`
   ADD PRIMARY KEY (`id_producto`);
 
 --
--- Indices de la tabla `usuario`
---
-ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`id_usuario`);
-
---
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -202,13 +172,7 @@ ALTER TABLE `contacto`
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `id_producto` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT de la tabla `usuario`
---
-ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_producto` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- Base de datos: `ecom`
 --
@@ -306,11 +270,7 @@ CREATE TABLE `product` (
 INSERT INTO `product` (`id`, `categories_id`, `name`, `mrp`, `price`, `qty`, `image`, `short_desc`, `description`, `meta_title`, `meta_desc`, `meta_keyword`, `status`) VALUES
 (1, 5, '1', 2, 3, 4, '', '5', '6', '7', '', '9', 1),
 (4, 5, 'test', 100, 99, 12, '727864583_2018_4image_15_14_018245767336-ll.jpg', 'test', 'test', 'test', 'test', 'test', 1),
-(5, 7, 'test33', 100, 98, 8, '708794487_64-1.jpg', 'test', 'test', 'test', '', 'test', 1),
-(6, 3, 'dfd', 0, 15, 100, '901985938_3.jpg', 'tyt', 'try', 'rytr', 'rtyrt', 'ryt', 1),
-(7, 5, 'sdsd', 10, 100, 1100, '334720570_firma_reu.png', 'dfd', 'ddf', 'sfd', 's', 'sfd', 1),
-(8, 2, 'hj', 10, 15, 100, '529519112_123.png', 'dsd', 'asd', 'asd', 'asd', 'asd', 1),
-(9, 5, 'TEST56567', 10, 15, 100, '993683409_TRENTOM_P2 (1).png', 'FDGFG', 'DFGFD', 'GDG', 'DFG', 'DGFG', 1);
+(5, 7, 'test33', 100, 98, 8, '708794487_64-1.jpg', 'test', 'test', 'test', '', 'test', 1);
 
 -- --------------------------------------------------------
 
@@ -394,7 +354,7 @@ ALTER TABLE `contact_us`
 -- AUTO_INCREMENT de la tabla `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
@@ -744,7 +704,7 @@ CREATE TABLE `pma__recent` (
 --
 
 INSERT INTO `pma__recent` (`username`, `tables`) VALUES
-('root', '[{\"db\":\"db_todofono\",\"table\":\"producto\"},{\"db\":\"db_todofono\",\"table\":\"contacto\"},{\"db\":\"db_todofono\",\"table\":\"usuario\"},{\"db\":\"ecom\",\"table\":\"categories\"},{\"db\":\"ecom\",\"table\":\"product\"},{\"db\":\"db_todofono\",\"table\":\"categoria\"},{\"db\":\"ecom\",\"table\":\"contact_us\"},{\"db\":\"ecom\",\"table\":\"users\"},{\"db\":\"db_todofono\",\"table\":\"admin_usuario\"},{\"db\":\"db_todofono\",\"table\":\"contactos\"}]');
+('root', '[{\"db\":\"ecom\",\"table\":\"product\"},{\"db\":\"db_todofono\",\"table\":\"producto\"},{\"db\":\"db_todofono\",\"table\":\"categoria\"},{\"db\":\"db_todofono\",\"table\":\"contacto\"},{\"db\":\"ecom\",\"table\":\"contact_us\"},{\"db\":\"ecom\",\"table\":\"categories\"},{\"db\":\"ecom\",\"table\":\"users\"},{\"db\":\"db_todofono\",\"table\":\"admin_usuario\"},{\"db\":\"db_todofono\",\"table\":\"contactos\"},{\"db\":\"ecom\",\"table\":\"admin_users\"}]');
 
 -- --------------------------------------------------------
 
@@ -851,7 +811,7 @@ CREATE TABLE `pma__userconfig` (
 --
 
 INSERT INTO `pma__userconfig` (`username`, `timevalue`, `config_data`) VALUES
-('root', '2021-10-02 09:06:21', '{\"Console\\/Mode\":\"collapse\",\"lang\":\"es\"}');
+('root', '2021-10-01 19:30:52', '{\"Console\\/Mode\":\"collapse\",\"lang\":\"es\"}');
 
 -- --------------------------------------------------------
 
