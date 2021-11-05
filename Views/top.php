@@ -54,7 +54,7 @@ while($row=mysqli_fetch_assoc($cat_res)){
                                 <ul>
                                     <li><a href="tel:0123456789"><i class="fa fa-phone"></i> +979 555 630</a></li>
                                     <li><a href="mailto:demo@example.com"><i class="fa fa-envelope-o"></i> administrador@todofon.net.pe</a></li>
-                                    <li><a href="my-account.html"><i class="fa fa-user"></i> Cuenta</a></li>
+                                    <li><a href="login.php"><i class="fa fa-user"></i>Mi Cuenta</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -180,7 +180,7 @@ while($row=mysqli_fetch_assoc($cat_res)){
                                             </ul>
                                             <ul class="d-block">
                                                 <li class="title"><a href="#">Related Shop Pages</a></li>
-                                                <li><a href="my-account.html">Account Page</a></li>
+                                                <li><a href="my-account.php">Account Page</a></li>
                                                 <li><a href="login.html">Login & Register Page</a></li>
                                                 <li><a href="empty-cart.html">Empty Cart Page</a></li>
                                                 <li><a href="thank-you-page.html">Thank You Page</a></li>
@@ -213,7 +213,7 @@ while($row=mysqli_fetch_assoc($cat_res)){
                                             </ul>
                                             <ul class="d-block">
                                                 <li class="title"><a href="#">Related Shop Pages</a></li>
-                                                <li><a href="my-account.html">Account Page</a></li>
+                                                <li><a href="my-account.php">Account Page</a></li>
                                                 <li><a href="login.html">Login & Register Page</a></li>
                                                 <li><a href="empty-cart.html">Empty Cart Page</a></li>
                                                 <li><a href="thank-you-page.html">Thank You Page</a></li>
@@ -266,7 +266,7 @@ while($row=mysqli_fetch_assoc($cat_res)){
                                                 <li><a href="checkout.html">Checkout Page</a></li>
                                                 <li><a href="compare.html">Compare Page</a></li>
                                                 <li><a href="wishlist.html">Wishlist Page</a></li>
-                                                <li><a href="my-account.html">Account Page</a></li>
+                                                <li><a href="my-account.php">Account Page</a></li>
                                                 <li><a href="login.html">Login & Register Page</a></li>
                                                 <li><a href="empty-cart.html">Empty Cart Page</a></li>
                                             </ul>
@@ -419,7 +419,7 @@ while($row=mysqli_fetch_assoc($cat_res)){
                 <ul>
                     <li><a href="tel:0123456789"><i class="fa fa-phone"></i> +012 3456 789</a></li>
                     <li><a href="mailto:demo@example.com"><i class="fa fa-envelope-o"></i> demo@example.com</a></li>
-                    <li><a href="my-account.html"><i class="fa fa-user"></i> Account</a></li>
+                    <li><a href="my-account.php"><i class="fa fa-user"></i> Account</a></li>
                 </ul>
             </div>
             <div class="inner customScroll">
@@ -456,7 +456,7 @@ while($row=mysqli_fetch_assoc($cat_res)){
                                 <li>
                                     <a href="#"><span class="menu-text">Related Shop Page</span></a>
                                     <ul class="sub-menu">
-                                        <li><a href="my-account.html">Account Page</a></li>
+                                        <li><a href="my-account.php">Account Page</a></li>
                                         <li><a href="login.html">Login & Register Page</a></li>
                                         <li><a href="empty-cart.html">Empty Cart Page</a></li>
                                         <li><a href="thank-you-page.html">Thank You Page</a></li>
@@ -505,7 +505,7 @@ while($row=mysqli_fetch_assoc($cat_res)){
                                         </li>
                                         <li><a href="compare.html">Compare Page</a></li>
                                         <li><a href="wishlist.html">Wishlist Page</a></li>
-                                        <li><a href="my-account.html">Account Page</a></li>
+                                        <li><a href="my-account.php">Account Page</a></li>
                                         <li><a href="login.html">Login & Register Page</a></li>
                                         <li><a href="empty-cart.html">Empty Cart Page</a></li>
                                     </ul>

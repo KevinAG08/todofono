@@ -40,7 +40,7 @@
                                     <div class="footer-links">
                                         <div class="footer-row">
                                             <ul class="align-items-center">
-                                                <li class="li"><a class="single-link" href="my-account.html">My Account</a></li>
+                                                <li class="li"><a class="single-link" href="my-account.php">My Account</a></li>
                                                 <li class="li"><a class="single-link" href="contact.html">Contact</a></li>
                                                 <li class="li"><a class="single-link" href="cart.html">Shopping cart</a></li>
                                                 <li class="li"><a class="single-link" href="shop-left-sidebar.html">Shop</a></li>
@@ -58,7 +58,7 @@
                                     <div class="footer-links">
                                         <div class="footer-row">
                                             <ul class="align-items-center">
-                                                <li class="li"><a class="single-link" href="my-account.html">My Account</a></li>
+                                                <li class="li"><a class="single-link" href="my-account.php">My Account</a></li>
                                                 <li class="li"><a class="single-link" href="contact.html">Contact</a></li>
                                                 <li class="li"><a class="single-link" href="cart.html">Shopping cart</a></li>
                                                 <li class="li"><a class="single-link" href="shop-left-sidebar.html">Shop</a></li>

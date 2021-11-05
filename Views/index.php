@@ -126,7 +126,7 @@
                                     <div class="thumb">
                                         <a href="single-product.php?id=<?php echo $list['id_producto']?>" class="image">
                                             <img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$list['producto_imagen']?>" alt="Product" />
-                                            <img class="hover-image" src="assets/images/product-image/5.webp" alt="Product" />
+                                            <img class="hover-image" src="<?php echo PRODUCT_IMAGE_SITE_PATH.$list['producto_imagen']?>" alt="Product" />
                                         </a>
                                     </div>
                                     <div class="content">
