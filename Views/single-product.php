@@ -150,10 +150,10 @@ if(isset($_GET['id'])){
                             </div>
                             <div class="pro-details-quality">
                                 <div class="cart-plus-minus">
-                                    <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1" />
+                                    <input class="cart-plus-minus-box" type="text" name="qtybutton" id="qty" value="1" />
                                 </div>
                                 <div class="pro-details-cart">
-                                    <button class="add-cart"> Add To Cart</button>
+                                    <button class="add-cart" href="javascript:void(0)" onclick="manage_cart('<?php echo $get_product['0']['id_producto']?>','add')">Añadir al Carrito</button>
                                 </div>
                                 <div class="pro-details-compare-wishlist pro-details-wishlist ">
                                     <a href="wishlist.html"><i class="pe-7s-like"></i></a>
@@ -339,7 +339,7 @@ if(isset($_GET['id'])){
                                             </span>
                                         </div>
                                         <div class="actions">
-                                            <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                            <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                 class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                     class="pe-7s-like"></i></button>
@@ -373,7 +373,7 @@ if(isset($_GET['id'])){
                                             </span>
                                         </div>
                                         <div class="actions">
-                                            <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                            <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                 class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                     class="pe-7s-like"></i></button>
@@ -405,7 +405,7 @@ if(isset($_GET['id'])){
                                             </span>
                                         </div>
                                         <div class="actions">
-                                            <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                            <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                 class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                     class="pe-7s-like"></i></button>
@@ -437,7 +437,7 @@ if(isset($_GET['id'])){
                                             </span>
                                         </div>
                                         <div class="actions">
-                                            <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                            <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                 class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                     class="pe-7s-like"></i></button>
@@ -468,7 +468,7 @@ if(isset($_GET['id'])){
                                             </span>
                                         </div>
                                         <div class="actions">
-                                            <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                            <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                 class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                     class="pe-7s-like"></i></button>
@@ -502,7 +502,7 @@ if(isset($_GET['id'])){
                                             </span>
                                         </div>
                                         <div class="actions">
-                                            <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                            <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                 class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                     class="pe-7s-like"></i></button>
@@ -534,7 +534,7 @@ if(isset($_GET['id'])){
                                             </span>
                                         </div>
                                         <div class="actions">
-                                            <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                            <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                 class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                     class="pe-7s-like"></i></button>
@@ -567,7 +567,7 @@ if(isset($_GET['id'])){
                                             </span>
                                         </div>
                                         <div class="actions">
-                                            <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                            <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                 class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                     class="pe-7s-like"></i></button>

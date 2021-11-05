@@ -1,17 +1,19 @@
 <?php
 require('connection.inc.php');
 require('functions.inc.php');
+require('add_to_cart.inc.php');
 $cat_res=mysqli_query($con,"select * from categoria where categoria_estado=1 order by categoria_nombre asc");
 $cat_arr=array();
 while($row=mysqli_fetch_assoc($cat_res)){
 	$cat_arr[]=$row;	
 }
+
+$obj=new add_to_cart();
+$totalProduct=$obj->totalProduct();
 ?>
 
-
 <!DOCTYPE html>
-<html lang="zxx" dir="ltr">
-
+<html lang="es" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,7 +56,12 @@ while($row=mysqli_fetch_assoc($cat_res)){
                                 <ul>
                                     <li><a href="tel:0123456789"><i class="fa fa-phone"></i> +979 555 630</a></li>
                                     <li><a href="mailto:demo@example.com"><i class="fa fa-envelope-o"></i> administrador@todofon.net.pe</a></li>
-                                    <li><a href="login.php"><i class="fa fa-user"></i>Mi Cuenta</a></li>
+                                    <?php if(isset($_SESSION['USER_LOGIN'])){
+											echo '<li><a href="logout.php"><i class="fa fa-sign-out"></i>Cerrar Sesión</a></li>';
+										}else{
+											echo '<li><a href="login.php"><i class="fa fa-user"></i>Iniciar sesión</a></li>';
+										}
+									?>
                                 </ul>
                             </div>
                         </div>
@@ -88,7 +95,7 @@ while($row=mysqli_fetch_assoc($cat_res)){
                                 <!-- Single Wedge End -->
                                 <a href="#offcanvas-cart" class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
                                     <i class="pe-7s-shopbag"></i>
-                                    <span class="header-action-num">00</span>
+                                    <span class="header-action-num"><?php echo $totalProduct?></span>
                                     <!-- <span class="cart-amount">€30.00</span> -->
                                 </a>
                                 <a href="#offcanvas-mobile-menu" class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
@@ -126,7 +133,7 @@ while($row=mysqli_fetch_assoc($cat_res)){
                                 <!-- Single Wedge End -->
                                 <a href="#offcanvas-cart" class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
                                     <i class="pe-7s-shopbag"></i>
-                                    <span class="header-action-num">01</span>
+                                    <span class="header-action-num"><?php echo $totalProduct?></span>
                                     <!-- <span class="cart-amount">€30.00</span> -->
                                 </a>
                                 <a href="#offcanvas-mobile-menu" class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
@@ -377,30 +384,25 @@ while($row=mysqli_fetch_assoc($cat_res)){
                 </div>
                 <div class="body customScroll">
                     <ul class="minicart-product-list">
-                        <li>
-                            <a href="single-product.html" class="image"><img src="assets/images/product-image/1.webp" alt="Cart product Image"></a>
-                            <div class="content">
-                                <a href="single-product.html" class="title">Modern Smart Phone</a>
-                                <span class="quantity-price">1 x <span class="amount">$18.86</span></span>
-                                <a href="#" class="remove">×</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="single-product.html" class="image"><img src="assets/images/product-image/2.webp" alt="Cart product Image"></a>
-                            <div class="content">
-                                <a href="single-product.html" class="title">Bluetooth Headphone</a>
-                                <span class="quantity-price">1 x <span class="amount">$43.28</span></span>
-                                <a href="#" class="remove">×</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="single-product.html" class="image"><img src="assets/images/product-image/3.webp" alt="Cart product Image"></a>
-                            <div class="content">
-                                <a href="single-product.html" class="title">Smart Music Box</a>
-                                <span class="quantity-price">1 x <span class="amount">$37.34</span></span>
-                                <a href="#" class="remove">×</a>
-                            </div>
-                        </li>
+                        <?php
+                        if(isset($_SESSION['cart'])){
+                            foreach($_SESSION['cart'] as $key=>$val){
+                            $productArr=get_product($con,'','',$key);
+                            $pname=$productArr[0]['producto_nombre'];
+                            $mrp=$productArr[0]['producto_mrp'];
+                            $price=$productArr[0]['producto_precio'];
+                            $image=$productArr[0]['producto_imagen'];
+                            $qty=$val['qty'];
+                            ?>
+                            <li>
+                                <a href="single-product.html" class="image"><img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$image?>" alt="Cart product Image"></a>
+                                <div class="content">
+                                    <a href="single-product.html" class="title"><?php echo $pname?></a>
+                                    <span class="quantity-price"><?php echo $qty?> x <span class="amount"><?php echo $price?></span></span>
+                                    <a href="javascript:void(0)" onclick="manage_cart('<?php echo $key?>','remove')" class="remove">×</a>
+                                </div>
+                            </li>
+                        <?php } } ?>
                     </ul>
                 </div>
                 <div class="foot">

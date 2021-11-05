@@ -35,16 +35,19 @@
                                     <div class="login-form-container">
                                         <div class="login-register-form">
                                             <form id="login-form" method="post">
-                                                <input name="email" id="email" placeholder="Email" type="email" />
-                                                <input type="password" name="password" id="password" placeholder="Password" />
+                                                <input name="login_email" id="login_email" placeholder="Email" type="email" />
+                                                <p class="form-messege" id="login_email_error"></p>
+                                                <input type="password" name="login_password" id="login_password" placeholder="Password" />
+                                                <p class="form-messege" id="login_password_error"></p>
                                                 <div class="button-box">
                                                     <div class="login-toggle-btn">
                                                         <input type="checkbox" />
                                                         <a class="flote-none" href="javascript:void(0)">Remember me</a>
                                                         <a href="#">Forgot Password?</a>
                                                     </div>
-                                                    <button type="submit"><span>Login</span></button>
+                                                    <button type="button" onclick="user_login()">Login</button>
                                                 </div>
+                                                <p class="form-messege-login"></p>
                                             </form>
                                         </div>
                                     </div>

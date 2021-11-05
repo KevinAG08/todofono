@@ -106,7 +106,7 @@ if(isset($_GET['id']) && $_GET['id']!=''){
                                                             </span>
                                                         </div>
                                                         <div class="actions">
-                                                            <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                            <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                                 class="pe-7s-shopbag"></i></button>
                                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                                     class="pe-7s-like"></i></button>
@@ -150,7 +150,7 @@ if(isset($_GET['id']) && $_GET['id']!=''){
                                                                 <span class="new">$38.50</span>
                                                                 </span>
                                                                 <div class="actions">
-                                                                    <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                                    <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                                         class="pe-7s-shopbag"></i></button>
                                                                     <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                                             class="pe-7s-like"></i></button>
@@ -195,7 +195,7 @@ if(isset($_GET['id']) && $_GET['id']!=''){
                                                                 <span class="new">$38.50</span>
                                                                 </span>
                                                                 <div class="actions">
-                                                                    <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                                    <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                                         class="pe-7s-shopbag"></i></button>
                                                                     <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                                             class="pe-7s-like"></i></button>
@@ -238,7 +238,7 @@ if(isset($_GET['id']) && $_GET['id']!=''){
                                                                 <span class="new">$38.50</span>
                                                                 </span>
                                                                 <div class="actions">
-                                                                    <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                                    <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                                         class="pe-7s-shopbag"></i></button>
                                                                     <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                                             class="pe-7s-like"></i></button>
@@ -281,7 +281,7 @@ if(isset($_GET['id']) && $_GET['id']!=''){
                                                                 <span class="new">$38.50</span>
                                                                 </span>
                                                                 <div class="actions">
-                                                                    <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                                    <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                                         class="pe-7s-shopbag"></i></button>
                                                                     <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                                             class="pe-7s-like"></i></button>
@@ -323,7 +323,7 @@ if(isset($_GET['id']) && $_GET['id']!=''){
                                                                 <span class="new">$38.50</span>
                                                                 </span>
                                                                 <div class="actions">
-                                                                    <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                                    <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                                         class="pe-7s-shopbag"></i></button>
                                                                     <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                                             class="pe-7s-like"></i></button>
@@ -367,7 +367,7 @@ if(isset($_GET['id']) && $_GET['id']!=''){
                                                                 <span class="new">$38.50</span>
                                                                 </span>
                                                                 <div class="actions">
-                                                                    <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                                    <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                                         class="pe-7s-shopbag"></i></button>
                                                                     <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                                             class="pe-7s-like"></i></button>
@@ -409,7 +409,7 @@ if(isset($_GET['id']) && $_GET['id']!=''){
                                                                 <span class="new">$38.50</span>
                                                                 </span>
                                                                 <div class="actions">
-                                                                    <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                                    <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                                         class="pe-7s-shopbag"></i></button>
                                                                     <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                                             class="pe-7s-like"></i></button>
@@ -453,7 +453,7 @@ if(isset($_GET['id']) && $_GET['id']!=''){
                                                                 <span class="new">$38.50</span>
                                                                 </span>
                                                                 <div class="actions">
-                                                                    <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                                    <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                                         class="pe-7s-shopbag"></i></button>
                                                                     <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                                             class="pe-7s-like"></i></button>
@@ -496,7 +496,7 @@ if(isset($_GET['id']) && $_GET['id']!=''){
                                                                 <span class="new">$38.50</span>
                                                                 </span>
                                                                 <div class="actions">
-                                                                    <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                                    <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                                         class="pe-7s-shopbag"></i></button>
                                                                     <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                                             class="pe-7s-like"></i></button>
@@ -539,7 +539,7 @@ if(isset($_GET['id']) && $_GET['id']!=''){
                                                                 <span class="new">$38.50</span>
                                                                 </span>
                                                                 <div class="actions">
-                                                                    <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                                    <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                                         class="pe-7s-shopbag"></i></button>
                                                                     <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                                             class="pe-7s-like"></i></button>
@@ -582,7 +582,7 @@ if(isset($_GET['id']) && $_GET['id']!=''){
                                                                 <span class="new">$38.50</span>
                                                                 </span>
                                                                 <div class="actions">
-                                                                    <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                                    <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                                         class="pe-7s-shopbag"></i></button>
                                                                     <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                                             class="pe-7s-like"></i></button>
@@ -627,7 +627,7 @@ if(isset($_GET['id']) && $_GET['id']!=''){
                                                                 <span class="new">$38.50</span>
                                                                 </span>
                                                                 <div class="actions">
-                                                                    <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                                    <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                                         class="pe-7s-shopbag"></i></button>
                                                                     <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                                             class="pe-7s-like"></i></button>

@@ -203,7 +203,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -237,7 +237,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -269,7 +269,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -301,7 +301,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -332,7 +332,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -366,7 +366,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -398,7 +398,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -431,7 +431,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -469,7 +469,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -503,7 +503,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -535,7 +535,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -567,7 +567,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -598,7 +598,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -632,7 +632,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -664,7 +664,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -697,7 +697,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -735,7 +735,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -769,7 +769,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -801,7 +801,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -833,7 +833,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -864,7 +864,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -898,7 +898,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -930,7 +930,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -963,7 +963,7 @@
                                                 </span>
                                             </div>
                                             <div class="actions">
-                                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                                 <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                                                         class="pe-7s-like"></i></button>
@@ -1033,7 +1033,7 @@
                         <div class="feature-right-content">
                             <div class="image-side">
                                 <img src="assets/images/feature-image/2.webp" alt=""> 
-                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                     class="pe-7s-shopbag"></i></button>
                             </div>
                             <div class="content-side">
@@ -1061,7 +1061,7 @@
                         <div class="feature-right-content mt-30px">
                             <div class="image-side">
                                 <img src="assets/images/feature-image/3.webp" alt="">
-                                <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                <button title="Añadir al Carrito" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                     class="pe-7s-shopbag"></i></button>
                             </div>
                             <div class="content-side">
