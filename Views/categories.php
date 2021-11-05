@@ -92,11 +92,11 @@ if(isset($_GET['id']) && $_GET['id']!=''){
                                                         <div class="thumb">
                                                             <a href="single-product.php?id=<?php echo $list['id_producto']?>" class="image">
                                                                 <img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$list['producto_imagen']?>" alt="Product" />
-                                                                <img class="hover-image" src="assets/images/product-image/2.webp" alt="Product" />
+                                                                <img class="hover-image" src="<?php echo PRODUCT_IMAGE_SITE_PATH.$list['producto_imagen']?>" alt="Product" />
                                                             </a>
                                                         </div>
                                                         <div class="content">
-                                                            <span class="category"><a href="#">Accessories</a></span>
+                                                            <span class="category"><a href="#"><?php echo $list['id_categoria']?></a></span>
                                                             <h5 class="title"><a href="single-product.php?id=<?php echo $list['id_producto']?>"><?php echo $list['producto_nombre']?>
                                                                 </a>
                                                             </h5>
@@ -117,76 +117,6 @@ if(isset($_GET['id']) && $_GET['id']!=''){
                                                     </div>
                                                 </div>
                                                 <?php } ?>
-                                               
-                                                
-                                                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 mb-30px">
-                                                    <!-- Single Prodect -->
-                                                    <div class="product">
-                                                        <span class="badges">
-                                                        <span class="sale">-5%</span>
-                                                        </span>
-                                                        <div class="thumb">
-                                                            <a href="single-product.html" class="image">
-                                                                <img src="assets/images/product-image/8.webp" alt="Product" />
-                                                                <img class="hover-image" src="assets/images/product-image/8.webp" alt="Product" />
-                                                            </a>
-                                                        </div>
-                                                        <div class="content">
-                                                            <span class="category"><a href="#">Accessories</a></span>
-                                                            <h5 class="title"><a href="single-product.html">Power Bank 10000Mhp
-                                                                </a>
-                                                            </h5>
-                                                            <span class="price">
-                                                            <span class="old">$260.00</span>
-                                                            <span class="new">$238.50</span>
-                                                            </span>
-                                                        </div>
-                                                        <div class="actions">
-                                                            <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
-                                                                class="pe-7s-shopbag"></i></button>
-                                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
-                                                                    class="pe-7s-like"></i></button>
-                                                            <button class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
-                                                            <button class="action compare" title="Compare" data-bs-toggle="modal" data-bs-target="#exampleModal-Compare"><i
-                                                                    class="pe-7s-refresh-2"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                                
-                                                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 mb-30px">
-                                                    <!-- Single Prodect -->
-                                                    <div class="product">
-                                                        <span class="badges">
-                                                        <span class="sale">-8%</span>
-                                                        </span>
-                                                        <div class="thumb">
-                                                            <a href="single-product.html" class="image">
-                                                                <img src="assets/images/product-image/4.webp" alt="Product" />
-                                                                <img class="hover-image" src="assets/images/product-image/4.webp" alt="Product" />
-                                                            </a>
-                                                        </div>
-                                                        <div class="content">
-                                                            <span class="category"><a href="#">Accessories</a></span>
-                                                            <h5 class="title"><a href="single-product.html">Modern Smart Phone
-                                                                </a>
-                                                            </h5>
-                                                            <span class="price">
-                                                            <span class="old">$38.50</span>
-                                                            <span class="new">$30.50</span>
-                                                            </span>
-                                                        </div>
-                                                        <div class="actions">
-                                                            <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
-                                                                class="pe-7s-shopbag"></i></button>
-                                                            <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
-                                                                    class="pe-7s-like"></i></button>
-                                                            <button class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
-                                                            <button class="action compare" title="Compare" data-bs-toggle="modal" data-bs-target="#exampleModal-Compare"><i
-                                                                    class="pe-7s-refresh-2"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade mb-n-30px" id="shop-list">
@@ -734,7 +664,7 @@ if(isset($_GET['id']) && $_GET['id']!=''){
                         <!-- Shop Bottom Area End -->
                     </div>
                 <?php } else { 
-					echo "Data not found";
+					echo "No se encontraron resultados";
 				} ?>
                 </div>
             </div>

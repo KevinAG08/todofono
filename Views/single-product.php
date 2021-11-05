@@ -24,12 +24,12 @@ if(isset($_GET['id'])){
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-12 text-center">
-                        <h2 class="breadcrumb-title">Single Product</h2>
+                        <h2 class="breadcrumb-title"><?php echo $get_product['0']['producto_nombre']?></h2>
                         <!-- breadcrumb-list start -->
                         <ul class="breadcrumb-list">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a href="categories.php?id=<?php echo $get_product['0']['id_categoria']?>"><?php echo $get_product['0']['categoria_nombre']?>/a></li>
-                            <li class="breadcrumb-item active"><?php echo $get_product['0']['producto nombre']?></li>
+                            <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
+                            <li class="breadcrumb-item"><a href="categories.php?id=<?php echo $get_product['0']['id_categoria']?>"><?php echo $get_product['0']['categoria_nombre']?></a></li>
+                            <li class="breadcrumb-item active"><?php echo $get_product['0']['producto_nombre']?></li>
                         </ul>
                         <!-- breadcrumb-list end -->
                     </div>
@@ -135,9 +135,6 @@ if(isset($_GET['id'])){
                                     <li>
                                         <a href="#"><?php echo $get_product['0']['categoria_nombre']?>, </a>
                                     </li>
-                                    <li>
-                                        <a href="#">ETC</a>
-                                    </li>
                                 </ul>
                             </div>
                             <div class="pro-details-categories-info pro-details-same-style d-flex m-0">
@@ -156,8 +153,7 @@ if(isset($_GET['id'])){
                                     <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1" />
                                 </div>
                                 <div class="pro-details-cart">
-                                    <button class="add-cart"> Add To
-                                        Cart</button>
+                                    <button class="add-cart"> Add To Cart</button>
                                 </div>
                                 <div class="pro-details-compare-wishlist pro-details-wishlist ">
                                     <a href="wishlist.html"><i class="pe-7s-like"></i></a>

@@ -427,7 +427,7 @@ while($row=mysqli_fetch_assoc($cat_res)){
                     <ul>
                         <li><a href="#"><span class="menu-text">Home</span></a>
                             <ul class="sub-menu">
-                                <li><a href="index.html"><span class="menu-text">Home 1</span></a></li>
+                                <li><a href="index.php"><span class="menu-text">Home 1</span></a></li>
                                 <li><a href="index-2.html"><span class="menu-text">Home 2</span></a></li>
                             </ul>
                         </li>

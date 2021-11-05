@@ -7,7 +7,7 @@
                         <h2 class="breadcrumb-title">Login</h2>
                         <!-- breadcrumb-list start -->
                         <ul class="breadcrumb-list">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                             <li class="breadcrumb-item active">Login</li>
                         </ul>
                         <!-- breadcrumb-list end -->
@@ -34,9 +34,9 @@
                                 <div id="lg1" class="tab-pane active">
                                     <div class="login-form-container">
                                         <div class="login-register-form">
-                                            <form action="#" method="post">
-                                                <input type="text" name="user-name" placeholder="Username" />
-                                                <input type="password" name="user-password" placeholder="Password" />
+                                            <form id="login-form" method="post">
+                                                <input name="email" id="email" placeholder="Email" type="email" />
+                                                <input type="password" name="password" id="password" placeholder="Password" />
                                                 <div class="button-box">
                                                     <div class="login-toggle-btn">
                                                         <input type="checkbox" />
@@ -52,13 +52,19 @@
                                 <div id="lg2" class="tab-pane">
                                     <div class="login-form-container">
                                         <div class="login-register-form">
-                                            <form action="#" method="post">
-                                                <input type="text" name="user-name" placeholder="Username" />
-                                                <input type="password" name="user-password" placeholder="Password" />
-                                                <input name="user-email" placeholder="Email" type="email" />
+                                            <form id="register-form" method="post">
+                                                <input type="text" name="name" id="name" placeholder="Usuario" />
+                                                <p class="form-messege" id="name_error"></p>
+                                                <input name="email" id="email" placeholder="Email" type="email" />
+                                                <p class="form-messege" id="email_error"></p>
+                                                <input type="text" name="mobile" id="mobile" type="phone" placeholder="Teléfono" />
+                                                <p class="form-messege" id="mobile_error"></p>
+                                                <input type="password" name="password" id="password" placeholder="Contraseña" />
+                                                <p class="form-messege" id="password_error"></p>
                                                 <div class="button-box">
-                                                    <button type="submit"><span>Register</span></button>
+                                                    <button type="button" onclick="user_register()">Register</button>
                                                 </div>
+                                                <p class="form-messege-success"></p>
                                             </form>
                                         </div>
                                     </div>

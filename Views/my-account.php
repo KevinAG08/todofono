@@ -7,7 +7,7 @@
                         <h2 class="breadcrumb-title">Account</h2>
                         <!-- breadcrumb-list start -->
                         <ul class="breadcrumb-list">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                             <li class="breadcrumb-item active">Account</li>
                         </ul>
                         <!-- breadcrumb-list end -->
@@ -181,5 +181,5 @@
         </div>
         <!-- account area start -->
 
-        
+
 <?php require ('footer.php'); ?>

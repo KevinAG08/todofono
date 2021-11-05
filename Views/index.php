@@ -130,7 +130,7 @@
                                         </a>
                                     </div>
                                     <div class="content">
-                                        <span class="category"><a href="#">Accessories</a></span>
+                                        <span class="category"><a href="#"><?php echo $list['id_categoria']?></a></span>
                                         <h5 class="title"><a href="single-product.php?id=<?php echo $list['id_producto']?>"><?php echo $list['producto_nombre']?></a></h5>
                                         <span class="price">
                                             <span class="old"><?php echo $list['producto_mrp']?></span>

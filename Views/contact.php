@@ -7,7 +7,7 @@
                         <h2 class="breadcrumb-title">Contact Us</h2>
                         <!-- breadcrumb-list start -->
                         <ul class="breadcrumb-list">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                             <li class="breadcrumb-item active">Contact</li>
                         </ul>
                         <!-- breadcrumb-list end -->
@@ -26,7 +26,7 @@
                                 <div class="contact-title mb-30">
                                     <h2 class="title">Send A Quest</h2>
                                 </div>
-                                <form class="contact-form-style" id="contact-form" action="https://whizthemes.com/nazmul/php/mail.php" method="post">
+                                <form class="contact-form-style" id="contact-form" action="#" method="post">
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <input name="name" placeholder="Nombres Completos*" id="name" type="text" />
@@ -40,6 +40,10 @@
                                         </div>
                                         <div class="col-lg-12 text-center">
                                             <textarea name="message" id="message" placeholder="Tú mensaje*"></textarea>
+                                            
+                                        </div>
+                                        <div class="col-lg-12 text-center">
+                                            
                                             <button class="btn btn-primary" onclick="send_message()" type="button">Enviar mensaje</button>
                                         </div>
                                     </div>

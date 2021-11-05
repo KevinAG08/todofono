@@ -8,7 +8,7 @@
                             <div class="col-md-6 col-lg-3 mb-md-30px mb-lm-30px">
                                 <div class="single-wedge">
                                     <div class="footer-logo">
-                                        <a href="index.html"><img src="assets/images/logo/footer-logo.png" alt=""></a>
+                                        <a href="index.php"><img src="assets/images/logo/footer-logo.png" alt=""></a>
                                     </div>
                                     <p class="about-text">Lorem sdipsum dolor sit amet consl adipisi elit, sed do eiusmod templ incididunt ut labore
                                     </p>
@@ -306,6 +306,8 @@
     <script src="assets/js/plugins/venobox.min.js"></script>
     <script src="assets/js/plugins/jquery-ui.min.js"></script>
     <script src="assets/js/plugins/mailchimp-ajax.js"></script>
+    <script src="assets/js/plugins/mailchimp-ajax.js"></script>
+    <script src="Views/assets/js/main.js"></script>
 
     <!-- Minify Version -->
     <!-- <script src="assets/js/vendor.min.js"></script>
@@ -314,6 +316,72 @@
 
     <!--Main JS (Common Activation Codes)-->
     <script src="assets/js/main.js"></script>
+    <script>
+        function send_message(){
+            var name=jQuery("#name").val();
+            var email=jQuery("#email").val();
+            var mobile=jQuery("#mobile").val();
+            var message=jQuery("#message").val();
+            
+            if(name==""){
+                alert('Complete el formulario y vuelva a intentarlo.');
+            }else if(email==""){
+                alert('Complete el formulario y vuelva a intentarlo.');
+            }else if(mobile==""){
+                alert('Complete el formulario y vuelva a intentarlo.');
+            }else if(message==""){
+                alert('Complete el formulario y vuelva a intentarlo.');
+            }else{
+                jQuery.ajax({
+                    url:'send_message.php',
+                    type:'post',
+                    data:'name='+name+'&email='+email+'&mobile='+mobile+'&message='+message,
+                    success:function(result){
+                        alert(result);
+                    }	
+                });
+            }
+        }
+    </script>
+    <script>
+        function user_register(){
+            jQuery('.form-messege').html('');
+            var name=jQuery("#name").val();
+            var email=jQuery("#email").val();
+            var mobile=jQuery("#mobile").val();
+            var password=jQuery("#password").val();
+            var is_error='';
+            if(name==""){
+                jQuery('#name_error').html('Please enter name');
+                is_error='yes';
+            }if(email==""){
+                jQuery('#email_error').html('Please enter email');
+                is_error='yes';
+            }if(mobile==""){
+                jQuery('#mobile_error').html('Please enter mobile');
+                is_error='yes';
+            }if(password==""){
+                jQuery('#password_error').html('Please enter password');
+                is_error='yes';
+            }
+            if(is_error==''){
+                jQuery.ajax({
+                    url:'register_submit.php',
+                    type:'post',
+                    data:'name='+name+'&email='+email+'&mobile='+mobile+'&password='+password,
+                    success:function(result){
+                        if(result=='email_present'){
+                            jQuery('#email_error').html('Email ya existente, por favor escoja otra opción');
+                        }
+                        if(result=='insert'){
+                            jQuery('.form-messege-success').html('Gracias por registrarse');
+                        }
+                    }	
+                });
+            }
+            
+        }
+    </script>
 </body>
 
 </html>
