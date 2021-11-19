@@ -57,7 +57,7 @@ $res=mysqli_query($con,$sql);
 							<tr>
 							   <td class="serial"><?php echo $i?></td>
 							   <td><?php echo $row['id_producto']?></td>
-							   <td><?php echo $row['id_categoria']?></td>
+							   <td><?php echo $row['categoria_nombre']?></td>
 							   <td><?php echo $row['producto_nombre']?></td>
 							   <td><img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$row['producto_imagen']?>"/></td>
 							   <td><?php echo $row['producto_mrp']?></td>

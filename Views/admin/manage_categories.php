@@ -17,6 +17,7 @@ if(isset($_GET['id']) && $_GET['id']!=''){
 
 if(isset($_POST['submit'])){
 	$categories=get_safe_value($con,$_POST['categories']);
+	
 	$res=mysqli_query($con,"select * from categoria where categoria_nombre='$categories'");
 	$check=mysqli_num_rows($res);
 	if($check>0){
