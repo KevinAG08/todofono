@@ -46,7 +46,7 @@
 											$price=$productArr[0]['producto_precio'];
 											$image=$productArr[0]['producto_imagen'];
 											$qty=$val['qty'];
-											?>
+										?>
                                             <tr>
                                                 <td class="product-thumbnail">
                                                     <a href="#"><img class="img-responsive ml-15px" src="<?php echo PRODUCT_IMAGE_SITE_PATH.$image?>" alt="" /></a>
@@ -73,11 +73,11 @@
                                 <div class="col-lg-12">
                                     <div class="cart-shiping-update-wrapper">
                                         <div class="cart-shiping-update">
-                                            <a href="#">Continue Shopping</a>
+                                            <a href="<?php echo SITE_PATH?>Views/">Continue Shopping</a>
                                         </div>
                                         <div class="cart-clear">
                                             <button>Update Shopping Cart</button>
-                                            <a href="#">Clear Shopping Cart</a>
+                                            <a href="<?php echo SITE_PATH?>Views/checkout.php">Proceed to Checkout</a>
                                         </div>
                                     </div>
                                 </div>
