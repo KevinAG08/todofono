@@ -43,33 +43,37 @@
                                         orders</a>, manage your <a href="#">shipping and billing addresses</a> and <a href="#">Edit your password and account details.</a></p>
                             </div>
                             <div class="tab-pane fade" id="orders">
-                                <h4>Orders</h4>
+                                <h4>Pedidos</h4>
                                 <div class="table_page table-responsive">
                                     <table>
                                         <thead>
                                             <tr>
-                                                <th>Order</th>
-                                                <th>Date</th>
-                                                <th>Status</th>
-                                                <th>Total</th>
-                                                <th>Actions</th>
+                                                <th>ID Pedido</th>
+                                                <th>Fecha de Pedido</th>
+                                                <th>Dirección</th>
+                                                <th>Tipo de Pago</th>
+                                                <th>Estado de Pago</th>
+                                                <th>Estado del Pedido</th>
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            <?php
+											$uid=$_SESSION['USER_ID'];
+											$res=mysqli_query($con,"select * from `order` where user_id='$uid'");
+											while($row=mysqli_fetch_assoc($res)){
+											?>
                                             <tr>
-                                                <td>1</td>
-                                                <td>May 10, 2018</td>
-                                                <td><span class="success">Completed</span></td>
-                                                <td>$25.00 for 1 item </td>
-                                                <td><a href="cart.html" class="view">view</a></td>
+                                                <td><a href="my-account-detail.php?id=<?php echo $row['id']?>" class="view"><?php echo $row['id']?> &nbsp;&nbsp;ver pedido</a></td>
+                                                <td><?php echo $row['added_on']?></td>
+                                                <td><?php echo $row['address']?><br/>
+												<?php echo $row['city']?><br/>
+												<?php echo $row['pincode']?></td>
+                                                <td><span class="success"><?php echo $row['payment_type']?></span></td>
+                                                <td><?php echo $row['payment_status']?></td>
+                                                <td><?php echo $row['order_status']?></td>
+                                                
                                             </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>May 10, 2018</td>
-                                                <td>Processing</td>
-                                                <td>$17.00 for 1 item </td>
-                                                <td><a href="cart.html" class="view">view</a></td>
-                                            </tr>
+                                            <?php } ?>
                                         </tbody>
                                     </table>
                                 </div>

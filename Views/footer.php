@@ -407,7 +407,7 @@
                         jQuery('.form-messege-login').html('Introduzca las credenciales correctas');
                     }
                     if (result == 'valid') {
-                        window.location.href = 'index.php';
+                        window.location.href=window.location.href;
                     }
                 }
             });

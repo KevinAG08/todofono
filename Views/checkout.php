@@ -18,17 +18,17 @@ if(isset($_POST['submit'])){
 	$user_id=$_SESSION['USER_ID'];
 	foreach($_SESSION['cart'] as $key=>$val){
 		$productArr=get_product($con,'','',$key);
-		$price=$productArr[0]['price'];
+		$price=$productArr[0]['producto_precio'];
 		$qty=$val['qty'];
 		$cart_total=$cart_total+($price*$qty);
 		
 	}
 	$total_price=$cart_total;
-	$payment_status='pending';
-	if($payment_type=='cod'){
-		$payment_status='success';
+	$payment_status='pendiente';
+	if($payment_type=='Recojo / Tienda'){
+		$payment_status='Success';
 	}
-	$order_status='pending';
+	$order_status='pendiente';
 	$added_on=date('Y-m-d h:i:s');
 	
 	
@@ -38,7 +38,7 @@ if(isset($_POST['submit'])){
 	
 	foreach($_SESSION['cart'] as $key=>$val){
 		$productArr=get_product($con,'','',$key);
-		$price=$productArr[0]['price'];
+		$price=$productArr[0]['producto_precio'];
 		$qty=$val['qty'];
 		
 		mysqli_query($con,"insert into `order_detail`(order_id,product_id,qty,price) values('$order_id','$key','$qty','$price')");
@@ -47,9 +47,11 @@ if(isset($_POST['submit'])){
 	unset($_SESSION['cart'])
 	?>
 	<script>
-		window.location.href='thank_you.php';
+		window.location.href='thank-you-page.php';
 	</script>
 	<?php
+	
+	
 	
 	
 }
@@ -77,169 +79,79 @@ if(isset($_POST['submit'])){
                 <div class="row">
                     <div class="col-lg-7">
                         <div class="billing-info-wrap">
-                            <h3>Billing Details</h3>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="billing-info mb-4">
-                                        <label>First Name</label>
-                                        <input type="text" />
+                            <h3>Detalles de facturación</h3>
+                            <?php 
+								$accordion_class='checkout-toggle2';
+								if(!isset($_SESSION['USER_LOGIN'])){
+								$accordion_class='checkout-toggle2';
+							?>
+                            <div class="row"> 
+                                <form id="login-form" method="post">
+                                    <h5>Inicia sesión para proceder su compra</h5>
+                                    <div class="checkout-account mb-30px">
+                                        <input class="checkout-toggle2 w-auto h-auto" type="checkbox" />
+                                        <label>Inicio de sesión / Registrarse</label>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="billing-info mb-4">
-                                        <label>Last Name</label>
-                                        <input type="text" />
+                                    <div class="checkout-account-toggle open-toggle2 mb-30">
+                                        <input name="login_email" id="login_email" placeholder="Email" type="email" />
+                                        <p style="color: red;" class="form-messege" id="login_email_error"></p>
+                                        <input type="password" name="login_password" id="login_password" placeholder="Password" />
+                                        <p style="color: red;" class="form-messege" id="login_password_error"></p>
+                                        <button class="btn-hover checkout-btn" type="button" onclick="user_login()">Iniciar sesión</button>
                                     </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="billing-info mb-4">
-                                        <label>Company Name</label>
-                                        <input type="text" />
+                                    <p class="form-messege-login"></p>
+                                    <br>       
+                                </form>
+                                <form action="">
+                                    <div class="checkout-account-toggle open-toggle2 mb-30">
+                                        <input type="text" name="name" id="name" placeholder="Usuario" />
+                                        <p class="form-messege" id="name_error"></p>
+                                        <input name="email" id="email" placeholder="Email" type="email" />
+                                        <p class="form-messege" id="email_error"></p>
+                                        <input type="text" name="mobile" id="mobile" type="phone" placeholder="Teléfono" />
+                                        <p class="form-messege" id="mobile_error"></p>
+                                        <input type="password" name="password" id="password" placeholder="Contraseña" />
+                                        <p class="form-messege" id="password_error"></p>
+                                        <button class="btn-hover checkout-btn" type="button" onclick="user_register()">register</button>
                                     </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="billing-select mb-4">
-                                        <label>Country</label>
-                                        <select>
-                                            <option>Select a country</option>
-                                            <option>Azerbaijan</option>
-                                            <option>Bahamas</option>
-                                            <option>Bahrain</option>
-                                            <option>Bangladesh</option>
-                                            <option>Barbados</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="billing-info mb-4">
-                                        <label>Street Address</label>
-                                        <input class="billing-address" placeholder="House number and street name" type="text" />
-                                        <input placeholder="Apartment, suite, unit etc." type="text" />
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="billing-info mb-4">
-                                        <label>Town / City</label>
-                                        <input type="text" />
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="billing-info mb-4">
-                                        <label>State / County</label>
-                                        <input type="text" />
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="billing-info mb-4">
-                                        <label>Postcode / ZIP</label>
-                                        <input type="text" />
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="billing-info mb-4">
-                                        <label>Phone</label>
-                                        <input type="text" />
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="billing-info mb-4">
-                                        <label>Email Address</label>
-                                        <input type="text" />
-                                    </div>
-                                </div>
+                                </form>
                             </div>
-                            <div class="checkout-account mb-30px">
-                                <input class="checkout-toggle2 w-auto h-auto" type="checkbox" />
-                                <label>Create an account?</label>
-                            </div>
-                            <div class="checkout-account-toggle open-toggle2 mb-30">
-                                <input placeholder="Email address" type="email" />
-                                <input placeholder="Password" type="password" />
-                                <button class="btn-hover checkout-btn" type="submit">register</button>
-                            </div>
-                            <div class="additional-info-wrap">
-                                <h4>Additional information</h4>
-                                <div class="additional-info">
-                                    <label>Order notes</label>
-                                    <textarea placeholder="Notes about your order, e.g. special notes for delivery. " name="message"></textarea>
-                                </div>
-                            </div>
-                            <div class="checkout-account mt-25">
-                                <input class="checkout-toggle w-auto h-auto" type="checkbox" />
-                                <label>Ship to a different address?</label>
-                            </div>
-                            <div class="different-address open-toggle mt-30px">
+                            <?php } ?>
+                            <br>
+                            <h5>Información de domicilio</h5>
+                            <form method="post">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="billing-info mb-4">
-                                            <label>First Name</label>
-                                            <input type="text" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="billing-info mb-4">
-                                            <label>Last Name</label>
-                                            <input type="text" />
-                                        </div>
-                                    </div>
                                     <div class="col-lg-12">
                                         <div class="billing-info mb-4">
-                                            <label>Company Name</label>
-                                            <input type="text" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="billing-select mb-4">
-                                            <label>Country</label>
-                                            <select>
-                                                <option>Select a country</option>
-                                                <option>Azerbaijan</option>
-                                                <option>Bahamas</option>
-                                                <option>Bahrain</option>
-                                                <option>Bangladesh</option>
-                                                <option>Barbados</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="billing-info mb-4">
-                                            <label>Street Address</label>
-                                            <input class="billing-address" placeholder="House number and street name" type="text" />
-                                            <input placeholder="Apartment, suite, unit etc." type="text" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="billing-info mb-4">
-                                            <label>Town / City</label>
-                                            <input type="text" />
+                                            <label>Dirección</label>
+                                            <input class="billing-address" placeholder="Número de casa y nombre de la calle" type="text" name="address" required/>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-4">
                                             <label>State / County</label>
-                                            <input type="text" />
+                                            <input type="text" name="city" placeholder="State / County" required/>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="billing-info mb-4">
                                             <label>Postcode / ZIP</label>
-                                            <input type="text" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="billing-info mb-4">
-                                            <label>Phone</label>
-                                            <input type="text" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="billing-info mb-4">
-                                            <label>Email Address</label>
-                                            <input type="text" />
+                                            <input type="text" name="pincode" placeholder="Postcode / ZIP" required/>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                <h5>Métodos de pago</h5>
+                                <div class="input-radio">
+                                    <span class="custom-radio"><input  type="radio" value="Pago / Domicilio" name="payment_type" required> Pago / domicilio</span>
+                                    <span class="custom-radio"><input type="radio" value="Recojo / Tienda" name="payment_type" required> Recojo / tienda</span>
+                                </div>
+                                <div class="your-order-area">
+                                    <div class="Place-order mt-25">
+                                        <input type="submit" name="submit"/>
+                                    </div>     
+                                </div>
+                                
+                            </form>
                         </div>
                     </div>
                     <div class="col-lg-5 mt-md-30px mt-lm-30px ">
@@ -291,30 +203,29 @@ if(isset($_POST['submit'])){
                                         <div id="faq" class="panel-group">
                                             <div class="panel panel-default single-my-account m-0">
                                                 <div class="panel-heading my-account-title">
-                                                    <h4 class="panel-title"><a data-bs-toggle="collapse" href="#my-account-1" class="collapsed" aria-expanded="true">Direct bank transfer</a>
+                                                    <h4 class="panel-title"><a data-bs-toggle="collapse" href="#my-account-1" class="collapsed" aria-expanded="true">Transferencia bancaria directa</a>
                                                     </h4>
                                                 </div>
                                                 <div id="my-account-1" class="panel-collapse collapse show" data-bs-parent="#faq">
                                                     <div class="panel-body">
-                                                        <p>Please send a check to Store Name, Store Street, Store Town,
-                                                            Store State / County, Store Postcode.</p>
+                                                        <p>Envíe un cheque a Nombre de la tienda, Calle de la tienda, Ciudad de la tienda, Estado / condado de la tienda, Código postal de la tienda.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="panel panel-default single-my-account m-0">
                                                 <div class="panel-heading my-account-title">
-                                                    <h4 class="panel-title"><a data-bs-toggle="collapse" href="#my-account-2" aria-expanded="false" class="collapsed">Check payments</a></h4>
+                                                    <h4 class="panel-title"><a data-bs-toggle="collapse" href="#my-account-2" aria-expanded="false" class="collapsed">Cheque pagos</a></h4>
                                                 </div>
                                                 <div id="my-account-2" class="panel-collapse collapse" data-bs-parent="#faq">
                                                     <div class="panel-body">
-                                                        <p>Please send a check to Store Name, Store Street, Store Town,
-                                                            Store State / County, Store Postcode.</p>
+                                                        <p>Envíe un cheque a Nombre de la tienda, Calle de la tienda, Ciudad de la tienda,
+                                                            Estado / condado de la tienda, código postal de la tienda.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="panel panel-default single-my-account m-0">
                                                 <div class="panel-heading my-account-title">
-                                                    <h4 class="panel-title"><a data-bs-toggle="collapse" href="#my-account-3">Cash on delivery</a></h4>
+                                                    <h4 class="panel-title"><a data-bs-toggle="collapse" href="#my-account-3">Contra reembolso</a></h4>
                                                 </div>
                                                 <div id="my-account-3" class="panel-collapse collapse" data-bs-parent="#faq">
                                                     <div class="panel-body">
